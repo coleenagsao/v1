@@ -1,6 +1,8 @@
 {
   "name": "v1",
-  "version": "0.1.0",
+  "description": "Personal Website V1",
+  "version": "1.0.0",
+  "author": "Coleen Agsao <coleentherese.agsao@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "next dev",
