@@ -9,7 +9,7 @@ import { IconLogo } from "./icons";
 export default function Nav(){
     return (
         <nav className="w-full border-0 py-6 lg:px-24 px-10 bg-gray-950 flex justify-between items-center">
-            <div className="h-10 w-10">
+            <div className="h-10 w-10 text-blue-300 relative">
                 <IconLogo/>
             </div>
             <div className="flex items-center">
