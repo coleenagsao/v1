@@ -25,7 +25,7 @@ export default function Hero(){
                   Halo!<span aria-hidden="true">👋🏻</span>
                 </h1>
                 {/* Name */}
-                <h1 className="text-4xl font-bold tracking-tight text-gray-200 md:text-6xl lg:text-7xl">
+                <h1 className="text-5xl font-bold tracking-tight text-gray-200 md:text-6xl lg:text-7xl">
                   I<span aria-hidden="true">&apos;</span>m <span className="text-transparent bg-clip-text bg-gradient-to-b from-blue-200 to-blue-400">Coleen Agsao</span>.
                 </h1>
                 {/* Description */}
