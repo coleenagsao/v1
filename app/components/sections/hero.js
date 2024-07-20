@@ -38,9 +38,13 @@ export default function Hero(){
                 </p>
 
               </div>
-              <div className="hidden sm:mb-8 sm:flex py-6 space-x-3">
+              <div className="flex sm:mb-8 py-6 space-x-3">
                 <div className="sm:w-auto relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-gray-100/20">
-                  <a href="#" className="font-semibold text-gray-500">
+                  <a href="#" className="font-semibold text-gray-500 lg:hidden">
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    Bicol, PH
+                  </a>
+                  <a href="#" className="font-semibold text-gray-500 hidden m:block lg:block">
                     <span aria-hidden="true" className="absolute inset-0" />
                     Bicol, Philippines
                   </a>
