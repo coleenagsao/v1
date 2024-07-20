@@ -39,7 +39,7 @@ export default function Hero(){
 
               </div>
               <div className="flex sm:mb-8 pt-6 space-x-3">
-                <div className="sm:w-auto relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-gray-100/20 text-center">
+                <div className="sm:w-auto relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-gray-100/20 text-center flex items-center justify-center">
                   <a href="#" className="font-semibold text-gray-500 lg:hidden">
                     <span aria-hidden="true" className="absolute inset-0" />
                     Bicol, PH
@@ -49,7 +49,7 @@ export default function Hero(){
                     Bicol, Philippines
                   </a>
                 </div>
-                <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-gray-100/20 text-center">
+                <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-gray-100/20 text-center align-middle flex items-center justify-center">
                   <a href="#" className="font-semibold text-gray-500 lg:hidden">
                     <span aria-hidden="true" className="absolute inset-0" />
                     Backend
@@ -59,8 +59,8 @@ export default function Hero(){
                     Backend Development
                   </a>
                 </div>
-                <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-yellow-100 text-center align-middle flex">
-                  <a href="#" className="font-semibold text-gray-500 hover:text-yellow-200">
+                <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-yellow-100 text-center flex items-center justify-center">
+                  <a href="#" className="font-semibold text-gray-500 hover:text-yellow-200 ">
                     <span aria-hidden="true" className="absolute inset-0" />
                     Turophile
                   </a>
