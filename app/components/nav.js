@@ -39,7 +39,7 @@ export default function Nav(){
               {/* Navigation Links */}
               <div className="hidden lg:flex lg:gap-x-12 items-center">
                 {navLinks.map((item) => (
-                  <a key={item.name} href={item.url} className="text-sm font-semibold leading-6 text-gray-200">
+                  <a key={item.name} href={item.url} className="text-sm font-semibold leading-6 text-gray-200 hover:text-blue-300">
                     {item.name}
                   </a>
                 ))}
