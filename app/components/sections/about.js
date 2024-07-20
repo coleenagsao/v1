@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function About(){
     return (
-        <section id='about' className="relative isolate px-6 lg:px-8 h-screen">
+        <section id='about' className="relative isolate px-6 lg:px-8 h-full">
             <div className="mx-auto max-w-4xl lg:max-w-5xl pt-20 lg:py-28 ">
               <div>
                 {/* Section */}
