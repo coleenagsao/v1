@@ -31,9 +31,9 @@ export default function Hero(){
                 {/* Description */}
                 <p className="mt-6 text-lg m:text-xl leading-8 text-gray-400 max-w-2xl md:max-w-3xl lg:max-w-4xl">
                   A software engineer focused on building above-average digital experiences. Currently, I’m focused on building a national trauma registry on the side with  <span>
-                  <Link href="https://pcs.org.ph/" className="text-blue-300 hover:underline" target="_blank" rel="noopener noreferrer" >Philippine College of Surgeons</Link>
+                  <Link href="https://pcs.org.ph/" className="text-blue-300 hover:underline" target="_blank" rel="noopener noreferrer" >Philippine College of Surgeons (PCS)</Link>
                   </span> and <span>
-                  <Link href="https://jrrmmc.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">Jose R. Reyes Memorial Medical Center</Link>
+                  <Link href="https://jrrmmc.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">Jose R. Reyes Memorial Medical Center (JRRMMC)</Link>
                   </span>.
                 </p>
 
