@@ -15,8 +15,8 @@ export default function Nav(){
         <header className="absolute inset-x-0 top-0 z-50">
             {/* Website Nav */}
             <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-10">
-              <div className="flex">
-                <a href="#" className="-m-1.5 p-1.5">
+              <div>
+                <a href="#">
                   <span className="sr-only">Coleen Agsao</span>
                   <div className="h-8 w-8 text-blue-300">
                     <IconLogo />
@@ -27,24 +27,25 @@ export default function Nav(){
               {/* Navigation Links */}
               <div className="hidden lg:flex lg:gap-x-12 items-center">
                 {navLinks.map((item) => (
-                  <a key={item.name} href={item.url} className="text-sm font-semibold leading-6 text-gray-200 hover:text-blue-300">
+                  <Link key={item.name} href={item.url} className="text-sm font-semibold leading-6 text-gray-200 hover:text-blue-300">
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
-                <a
-                    href="#"
-                    className="rounded-md bg-blue-600 px-3.5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
+                <div className="relative rounded px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-blue-900 hover:ring-blue-400">
+                  <a href="#" className="font-semibold text-blue-200 hover:text-blue-300">
+                    <span aria-hidden="true" className="absolute inset-0" />
                     Resume
-                </a>
+                  </a>
+                </div>
+                
               </div>
 
               {/* Social Media Links */}
               <div className="hidden lg:flex gap-x-8 px-6">
                     {socialMedia.map((item) => (
-                    <a key={item.name} href={item.url} className="size-5 text-gray-400 hover:text-blue-300 z-10">
+                    <Link key={item.name} href={item.url} target="_blank" rel="noopener noreferrer" className="size-5 text-gray-300 hover:text-blue-300 z-10">
                         <Icon name={item.name} />
-                    </a>
+                    </Link>
                     ))}
               </div>
 

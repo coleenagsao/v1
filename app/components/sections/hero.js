@@ -22,22 +22,39 @@ export default function Hero(){
               <div>
                 {/* Greeting */}
                 <h1 className="font-mono tracking-tight text-gray-200 text-xl lg:text-2xl mb-6">
-                  Halo!<span aria-hidden="true">👋</span>
+                  Halo!<span aria-hidden="true">👋🏻</span>
                 </h1>
                 {/* Name */}
                 <h1 className="text-4xl font-bold tracking-tight text-gray-200 md:text-6xl lg:text-7xl">
-                  I<span aria-hidden="true">&apos;</span>m <span className="text-blue-300">Coleen Agsao</span>.
+                  I<span aria-hidden="true">&apos;</span>m <span className="text-transparent bg-clip-text bg-gradient-to-b from-blue-200 to-blue-400">Coleen Agsao</span>.
                 </h1>
                 {/* Description */}
                 <p className="mt-6 text-lg m:text-xl leading-8 text-gray-400 max-w-2xl md:max-w-3xl lg:max-w-4xl">
-                  A software engineer focused on building above-average digital experiences. Currently, I’m focused on building a hospital information system on the side with <a href="https://jrrmmc.gov.ph/" className="text-blue-300">JRRMC</a>.
+                  A software engineer focused on building above-average digital experiences. Currently, I’m focused on building a national trauma registry on the side with  <span>
+                  <Link href="https://pcs.org.ph/" className="text-blue-300 hover:underline" target="_blank" rel="noopener noreferrer" >Philippine College of Surgeons</Link>
+                  </span> and <span>
+                  <Link href="https://jrrmmc.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">Jose R. Reyes Memorial Medical Center</Link>
+                  </span>.
                 </p>
+
               </div>
-              <div className="sm:mb-8 sm:flex sm:justify-center py-6">
+              <div className="hidden sm:mb-8 sm:flex py-6 space-x-3">
+                <div className="sm:w-auto relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-gray-100/20">
+                  <a href="#" className="font-semibold text-gray-500">
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    Bicol, Philippines
+                  </a>
+                </div>
                 <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-gray-100/20">
                   <a href="#" className="font-semibold text-gray-500">
                     <span aria-hidden="true" className="absolute inset-0" />
-                    JavaScript
+                    Backend Development
+                  </a>
+                </div>
+                <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-yellow-100">
+                  <a href="#" className="font-semibold text-gray-500 hover:text-yellow-200">
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    Turophile
                   </a>
                 </div>
               </div>
