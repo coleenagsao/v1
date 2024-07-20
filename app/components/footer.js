@@ -12,7 +12,7 @@ export default function Footer(){
               {/* Navigation Links */}
               <div className="flex gap-x-8 items-center lg:order-2">
                     {socialMedia.map((item) => (
-                    <a key={item.name} href={item.url} className="size-6 text-gray-400">
+                    <a key={item.name} href={item.url} className="size-6 text-gray-400 hover:text-blue-300 z-10">
                         <Icon name={item.name} />
                     </a>
                     ))}
