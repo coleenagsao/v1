@@ -21,23 +21,23 @@ export default function Hero(){
               {/* Name and Description */}
               <div>
                 {/* Greeting */}
-                <h1 className="font-mono tracking-tight text-gray-200 text-xl lg:text-xl mb-6">
+                <h1 className="font-mono tracking-tight text-gray-200 text-xl lg:text-2xl mb-6">
                   Halo!<span aria-hidden="true">👋</span>
                 </h1>
                 {/* Name */}
-                <h1 className="text-4xl font-bold tracking-tight text-gray-200 md:text-5xl lg:text-7xl">
+                <h1 className="text-4xl font-bold tracking-tight text-gray-200 md:text-6xl lg:text-7xl">
                   I<span aria-hidden="true">&apos;</span>m <span className="text-blue-300">Coleen Agsao</span>.
                 </h1>
                 {/* Description */}
-                <p className="mt-6 text-lg leading-8 text-gray-200 max-w-2xl md:max-w-3xl lg:max-w-5xl">
+                <p className="mt-6 text-lg m:text-xl leading-8 text-gray-400 max-w-2xl md:max-w-3xl lg:max-w-4xl">
                   A software engineer focused on building above-average digital experiences. Currently, I’m focused on building a hospital information system on the side with <a href="https://jrrmmc.gov.ph/" className="text-blue-300">JRRMC</a>.
                 </p>
               </div>
               <div className="sm:mb-8 sm:flex sm:justify-center py-6">
                 <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-gray-100/20">
-                  <a href="#" className="font-semibold text-blue-500">
+                  <a href="#" className="font-semibold text-gray-500">
                     <span aria-hidden="true" className="absolute inset-0" />
-                    coleentherese.agsao@gmail.com
+                    JavaScript
                   </a>
                 </div>
               </div>

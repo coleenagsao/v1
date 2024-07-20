@@ -6,8 +6,8 @@ import { useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-import { navLinks } from '../config';
-import { IconLogo } from "./icons";
+import { navLinks, socialMedia } from '../config';
+import { IconLogo, Icon } from "./icons";
 
 export default function Nav(){
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -15,25 +15,13 @@ export default function Nav(){
         <header className="absolute inset-x-0 top-0 z-50">
             {/* Website Nav */}
             <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-10">
-              <div className="flex lg:flex-1">
+              <div className="flex">
                 <a href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">Coleen Agsao</span>
                   <div className="h-8 w-8 text-blue-300">
                     <IconLogo />
                   </div>
                 </a>
-              </div>
-
-              {/* Mobile Menu Button */}
-              <div className="flex lg:hidden">
-                <button
-                  type="button"
-                  onClick={() => setMobileMenuOpen(true)}
-                  className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200"
-                >
-                  <span className="sr-only">Open main menu</span>
-                  <Bars3Icon aria-hidden="true" className="h-6 w-6" />
-                </button>
               </div>
 
               {/* Navigation Links */}
@@ -49,6 +37,27 @@ export default function Nav(){
                   >
                     Resume
                 </a>
+              </div>
+
+              {/* Social Media Links */}
+              <div className="hidden lg:flex gap-x-8 px-6">
+                    {socialMedia.map((item) => (
+                    <a key={item.name} href={item.url} className="size-5 text-gray-400 hover:text-blue-300 z-10">
+                        <Icon name={item.name} />
+                    </a>
+                    ))}
+              </div>
+
+              {/* Mobile Menu Button */}
+              <div className="flex lg:hidden">
+                <button
+                  type="button"
+                  onClick={() => setMobileMenuOpen(true)}
+                  className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200"
+                >
+                  <span className="sr-only">Open main menu</span>
+                  <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+                </button>
               </div>
             </nav>
             {/* Mobile Nav */}
@@ -96,26 +105,7 @@ export default function Nav(){
                 </div>
               </DialogPanel>
             </Dialog>
+            
           </header>
       )
-    // return (
-    //     <nav className="w-full border-0 py-6 lg:px-24 px-10 bg-gray-950 flex justify-between items-center">
-    //         <div className="h-10 w-10 text-blue-300 relative">
-    //             <IconLogo/>
-    //         </div>
-    //         <div className="flex items-center">
-    //             <ol className="flex align-center p-0 m-0 list-none">
-    //                 {navLinks &&
-    //                 navLinks.map(({ url, name }, i) => (
-    //                     <li key={i} className="mx-5 relative">
-    //                         {name}
-    //                     {/* <Link to={url}>{name}</Link> */}
-    //                     </li>
-    //                 ))}
-    //             </ol>  
-    //             <button className="bg-blue-400 text-white py-1 px-3 rounded mx-5">Resume</button>
-    //         </div>
-
-    //     </nav>
-    // )
 }
