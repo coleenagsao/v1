@@ -32,7 +32,8 @@ export default function Nav(){
                   </Link>
                 ))}
                 <div className="relative rounded px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-blue-900 hover:ring-blue-400">
-                  <a href="#" className="font-semibold text-blue-200 hover:text-blue-300">
+                  <a href="/AgsaoCT_resume.pdf" 
+                        download="AgsaoCT_resume.pdf" className="font-semibold text-blue-200 hover:text-blue-300">
                     <span aria-hidden="true" className="absolute inset-0" />
                     Resume
                   </a>
@@ -94,13 +95,14 @@ export default function Nav(){
                         </a>
                       ))}
                     </div>
-                    <div className="text-center">
-                        <a
-                            href="#"
-                            className="rounded-md bg-blue-600 px-3.5 py-2  text-sm font-semibold text-white shadow-sm hover:bg-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                        >
-                        Resume
+                    <div className="flex justify-center">
+                      <button className="relative rounded text-center px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-blue-900 hover:ring-blue-400">
+                        <a href="/AgsaoCT_resume.pdf" 
+                              download="AgsaoCT_resume.pdf" className="font-semibold text-blue-200 hover:text-blue-300">
+                          <span aria-hidden="true" className="absolute inset-0" />
+                          Resume
                         </a>
+                      </button>
                     </div>
                   </div>
                 </div>
