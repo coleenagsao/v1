@@ -25,22 +25,22 @@ export default function Skills(){
                     Here are a few technologies I have worked with in the past:  
                 </p>
               </div>
-              <div className="ml-4 mt-2">
+              <div className="md:ml-4 mt-2">
               {Object.entries(skills).map(([key, value]) => (
-                    <div key={key} className="flex items-center space-y-4 ">
-                        <div className="mr-5 mt-3 text-gray-200 font-semibold ">
+                    <div key={key} className="md:flex items-center space-y-4">
+                        <div className="mr-5 mt-4 text-gray-200 font-semibold ">
                             {key}:
                         </div>
-                        <div className="md:flex space-x-3 max-w-screen">
+                        <span className="flex flex-wrap">
                             {value.map((item) => (
-                                <div key={item} className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-blue-900 hover:ring-blue-400">
-                                <div className="font-semibold text-blue-200 hover:text-blue-300 hidden m:block lg:block text-center">
+                                <div key={item} className="my-1 mr-3 w-max relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-blue-900 hover:ring-gray-100/20 text-center flex items-center justify-center">
+                                <div className="font-semibold text-blue-200 hover:text-blue-300 text-center">
                                   <span aria-hidden="true" className="absolute inset-0" />
                                   {item}
                                 </div>
                               </div>
                             ))}
-                        </div>
+                        </span>
                     </div>
 
                 ))}
