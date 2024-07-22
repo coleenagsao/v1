@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function About(){
     return (
         <section id='about' className="relative isolate px-6 lg:px-8 h-full">
-            <div className="mx-auto max-w-4xl lg:max-w-5xl pt-20 lg:py-28 ">
+            <div className="mx-auto max-w-4xl lg:max-w-5xl pt-20 lg:py-56">
               <div>
                 {/* Section */}
                 <h1 className="text-xl font-bold tracking-tight text-gray-200 lg:text-2xl font-mono">
@@ -15,16 +15,18 @@ export default function About(){
                 {/* Photo Description */}
                 <div className="lg:flex">
                   {/* Photo */}
-                  <div className="p-6 lg:order-2 w-[400px] h-auto ">
-                    <div class="relative">
-                      <div class="z-50 absolute inset-0 hover:bg-blue-700 bg-blue-800 opacity-30"></div>
-                      <Image src="/me-2.jpeg" class="object-cover w-full h-full rounded-md" alt="Picture of the author" width={500} height={500} />
-                      
+                  <div className="flex-1 lg:order-2 w-full flex justify-center lg:justify-start">
+                    <div className="flex-1 p-6 lg:order-2 max-w-xs lg:w-[400px] h-auto">
+                      <div class="relative">
+                        <div class="z-50 absolute inset-0 hover:bg-blue-700 bg-blue-800 opacity-30"></div>
+                        <Image src="/me-2.jpeg" class="object-cover w-full h-full rounded-md" alt="Picture of the author" width={500} height={500} />
+                    </div>
                   </div>
+                 
                     
                   </div>
                   {/* Description */}
-                  <div className="lg:order-1 max-w-xl mr-6">
+                  <div className="flex-2 lg:order-1 max-w-2xl md:max-w-3xl lg:max-w-4xl mr-6">
                     <p className="lg:mt-6 text-m m:text-lg leading-8 text-gray-400">
                     I’m currently a freelance full-stack web developer working with {' '} 
                     <Link href="https://pcs.org.ph/" className="text-blue-300 hover:underline" target="_blank" rel="noopener noreferrer" >PCS</Link> {' '} and {' '} 
