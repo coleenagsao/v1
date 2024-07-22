@@ -14,17 +14,8 @@ export default function About(){
                 </h1>
                 {/* Photo Description */}
                 <div className="lg:flex">
-                  {/* Photo */}
-                  <div className="flex-1 lg:order-2 w-full flex justify-center lg:justify-start">
-                    <div className="flex-1 p-6 lg:order-2 max-w-xs lg:w-[400px] h-auto">
-                      <div class="relative">
-                        <div class="z-50 absolute inset-0 hover:bg-blue-700 bg-blue-800 opacity-30"></div>
-                        <Image src="/me-2.jpeg" class="object-cover w-full h-full rounded-md" alt="Picture of the author" width={500} height={500} />
-                      </div>
-                    </div> 
-                  </div>
                   {/* Description */}
-                  <div className="flex-2 lg:order-1 max-w-2xl md:max-w-3xl lg:max-w-4xl mr-6 text-md md:text-lg">
+                  <div className="flex-2 max-w-2xl md:max-w-3xl lg:max-w-4xl mr-6 text-md md:text-lg pt-6 md:pt-1">
                     <p className="lg:mt-6 leading-8 text-gray-400">
                     I’m currently a freelance full-stack web developer working with {' '} 
                     <Link href="https://pcs.org.ph/" className="text-blue-300 hover:underline" target="_blank" rel="noopener noreferrer" >PCS</Link> {' '} and {' '} 
@@ -35,12 +26,21 @@ export default function About(){
                     <Link href="https://www.kadakareer.com/virtual-apprenticeship/home" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">KadaKareer</Link>, and a {' '}
                     <Link href="https://www.mycode.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">coding academy for kids</Link>.
                   </p>
-                  <p className="mt-6 text-m m:text-lg leading-8 text-gray-400">
-                  I enjoy planning and making things function efficiently behind the scenes. While my primary love is for backend development, I take pride in transforming designs into living, breathing realities when working on the frontend. My goal is to build applications that are robust and scalable that stand the test of time, while providing an engaging and intuitive user experience. 
-                  </p>
-                  <p className="mt-6 text-m m:text-lg leading-8 text-gray-400">
-                  <span className="font-semibold">When I’m not working</span>, you’ll find me learning how to cook, organizing my room, eating anything with cheese, or figuring out how to make my second brain system better.
-                  </p>
+                    <p className="mt-6 text-m m:text-lg leading-8 text-gray-400">
+                    I enjoy planning and making things function efficiently behind the scenes. While my primary love is for backend development, I take pride in transforming designs into living, breathing realities when working on the frontend. My goal is to build applications that are robust and scalable that stand the test of time, while providing an engaging and intuitive user experience. 
+                    </p>
+                    <p className="mt-6 text-m m:text-lg leading-8 text-gray-400">
+                    <span className="font-semibold">When I’m not working</span>, you’ll find me learning how to cook, organizing my room, eating anything with cheese, or figuring out how to make my second brain system better.
+                    </p>
+                  </div>
+                  {/* Photo */}
+                  <div className="flex-1 w-full flex justify-center lg:justify-start">
+                    <div className="flex-1 p-6 max-w-xs lg:w-[400px] h-auto">
+                      <div class="relative">
+                        <div class="z-50 absolute inset-0 hover:bg-blue-700 bg-blue-800 opacity-30"></div>
+                        <Image src="/me-2.jpeg" class="object-cover w-full h-full rounded-md" alt="Picture of the author" width={500} height={500} />
+                      </div>
+                    </div> 
                   </div>
                 </div>
               </div>
