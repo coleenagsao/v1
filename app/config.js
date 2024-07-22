@@ -34,7 +34,14 @@ module.exports = {
         url: '/#contact',
       },
     ],
-  
+
+    skills: {
+      Languages: ['HTML', 'CSS', 'JavaScript', 'Python', 'C', 'Java', 'R', 'SQL'],
+      Frameworks: ['React', 'Vue', 'Tailwind', 'Bootstrap', 'Bulma'],
+      Tools: ['MongoDB', 'Firebase', 'Git', 'GitHub', 'Postman', 'Insomnia'],
+      Design: ['Figma', 'Prototyping', 'Wireframing', 'User Testing']
+    },
+
     colors: {
         blue: "#BEDBFE",
         green: '#64ffda',
