@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function About(){
     return (
         <section id='about' className="relative isolate px-6 lg:px-8 h-full">
-            <div className="mx-auto max-w-4xl lg:max-w-5xl pt-20 lg:py-56">
+            <div className="mx-auto max-w-4xl lg:max-w-5xl pt-20 lg:py-32">
               <div>
                 {/* Section */}
                 <h1 className="text-xl font-bold tracking-tight text-gray-200 lg:text-2xl font-mono">
@@ -20,14 +20,12 @@ export default function About(){
                       <div class="relative">
                         <div class="z-50 absolute inset-0 hover:bg-blue-700 bg-blue-800 opacity-30"></div>
                         <Image src="/me-2.jpeg" class="object-cover w-full h-full rounded-md" alt="Picture of the author" width={500} height={500} />
-                    </div>
-                  </div>
-                 
-                    
+                      </div>
+                    </div> 
                   </div>
                   {/* Description */}
-                  <div className="flex-2 lg:order-1 max-w-2xl md:max-w-3xl lg:max-w-4xl mr-6">
-                    <p className="lg:mt-6 text-m m:text-lg leading-8 text-gray-400">
+                  <div className="flex-2 lg:order-1 max-w-2xl md:max-w-3xl lg:max-w-4xl mr-6 text-md md:text-lg">
+                    <p className="lg:mt-6 leading-8 text-gray-400">
                     I’m currently a freelance full-stack web developer working with {' '} 
                     <Link href="https://pcs.org.ph/" className="text-blue-300 hover:underline" target="_blank" rel="noopener noreferrer" >PCS</Link> {' '} and {' '} 
                     <Link href="https://jrrmmc.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">JRRMMC </Link> {' '} to revolutionize the use of electronic medical records in the Philippines as I am awaiting graduation at the {' '}

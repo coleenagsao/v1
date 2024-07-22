@@ -28,10 +28,10 @@ export default function Skills(){
               <div className="ml-4 mt-2">
               {Object.entries(skills).map(([key, value]) => (
                     <div key={key} className="flex items-center space-y-4 ">
-                        <div className="mr-5 mt-3 text-gray-300 font-semibold ">
+                        <div className="mr-5 mt-3 text-gray-200 font-semibold ">
                             {key}:
                         </div>
-                        <div className="flex space-x-3">
+                        <div className="md:flex space-x-3 max-w-screen">
                             {value.map((item) => (
                                 <div key={item} className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-blue-900 hover:ring-blue-400">
                                 <div className="font-semibold text-blue-200 hover:text-blue-300 hidden m:block lg:block text-center">
