@@ -15,22 +15,21 @@ export default function About(){
                 {/* Photo Description */}
                 <div className="lg:flex">
                   {/* Photo */}
-                  <div className="pt-6 lg:order-2">
-                    {/* <Image
-                      src="/me.jpg"
-                      width={500}
-                      height={300}
-                      alt="Picture of the author"
-                    /> */}
+                  <div className="p-6 lg:order-2 w-[400px] h-auto ">
+                    <div class="relative">
+                      <div class="z-50 absolute inset-0 hover:bg-blue-700 bg-blue-800 opacity-30"></div>
+                      <Image src="/me-2.jpeg" class="object-cover w-full h-full rounded-md" alt="Picture of the author" width={500} height={500} />
+                      
+                  </div>
                     
                   </div>
                   {/* Description */}
-                  <div className="lg:order-1 max-w-lg">
+                  <div className="lg:order-1 max-w-xl mr-6">
                     <p className="lg:mt-6 text-m m:text-lg leading-8 text-gray-400">
                     I’m currently a freelance full-stack web developer working with {' '} 
                     <Link href="https://pcs.org.ph/" className="text-blue-300 hover:underline" target="_blank" rel="noopener noreferrer" >PCS</Link> {' '} and {' '} 
                     <Link href="https://jrrmmc.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">JRRMMC </Link> {' '} to revolutionize the use of electronic medical records in the Philippines as I am awaiting graduation at the {' '}
-                    <Link href="https://uplb.edu.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">University of the Philippines Los Banos</Link>. While studying, I have worked with a {' '}
+                    <Link href="https://uplb.edu.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">University of the Philippines Los Banos</Link>. While in the university, I have worked with a {' '}
                     <Link href="https://whitewidget.com/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">software design and engineering agency</Link>, a {' '}
                     <Link href="https://help.dashlabs.ai/#who-are-we" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">start up</Link> through {' '} 
                     <Link href="https://www.kadakareer.com/virtual-apprenticeship/home" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">KadaKareer</Link>, and a {' '}
