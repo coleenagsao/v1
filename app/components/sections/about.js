@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from 'framer-motion';
-import { Reveal } from "@/app/components/utils/reveal";
+import { FadeUp } from "@/app/components/utils";
 
 export default function About(){
     return (
@@ -11,17 +11,17 @@ export default function About(){
             <div className="mx-auto max-w-4xl lg:max-w-5xl pt-20 lg:py-32">
                 <div>
                   {/* Section */}
-                  <Reveal>
+                  <FadeUp>
                     <h1 className="text-xl font-bold tracking-tight text-gray-200 lg:text-2xl font-mono">
                       <span className="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-400">About Me.</span>
                     </h1>
-                  </Reveal>
+                  </FadeUp>
 
                   {/* Photo Description */}
                   <div className="lg:flex">
                     {/* Description */}
                     <div className="flex-2 max-w-2xl md:max-w-3xl lg:max-w-4xl mr-6 text-md md:text-lg pt-6 md:pt-1">
-                      <Reveal>
+                      <FadeUp>
                         <p className="lg:mt-6 leading-8 text-gray-400">
                           I’m currently a freelance full-stack web developer working with {' '} 
                           <Link href="https://pcs.org.ph/" className="text-blue-300 hover:underline" target="_blank" rel="noopener noreferrer" >PCS</Link> {' '} and {' '} 
@@ -38,10 +38,10 @@ export default function About(){
                         <p className="mt-6 text-m m:text-lg leading-8 text-gray-400">
                         <span className="font-semibold">When I’m not working</span>, you’ll find me learning how to cook, organizing my room, eating anything with cheese, or figuring out how to make my second brain system better.
                         </p>
-                    </Reveal>
+                    </FadeUp>
                     </div>
                     {/* Photo */}
-                    <Reveal>
+                    <FadeUp>
                       <div className="flex-1 w-full flex justify-center lg:justify-start">
                         <div className="flex-1 p-6 max-w-xs lg:w-[400px] h-auto">
                           <div className="relative">
@@ -50,7 +50,7 @@ export default function About(){
                           </div>
                         </div> 
                       </div>
-                    </Reveal>
+                    </FadeUp>
                     
                   </div>
                 </div>

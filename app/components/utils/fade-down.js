@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
-export const Down = ({ children }) => {
+const FadeDown = ({ children }) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true })
 
@@ -34,3 +34,5 @@ export const Down = ({ children }) => {
         </div>
     );
 }
+
+export default FadeDown;

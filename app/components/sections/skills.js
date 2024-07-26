@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { skills, navLinks } from '@/app/config';
-import { Reveal } from "@/app/components/utils/reveal";
+import { FadeUp } from "@/app/components/utils";
 
 export default function Skills(){
     return (
@@ -18,14 +18,14 @@ export default function Skills(){
               <div>
 
                 {/* Header */}
-                <Reveal>
+                <FadeUp>
                   <h1 className="text-xl font-bold tracking-tight text-gray-200 lg:text-2xl font-mono">
                     <span className="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-400">Skills.</span>
                   </h1>
-                </Reveal>
+                </FadeUp>
                 
                 {/* Description */}
-                <Reveal>     
+                <FadeUp>     
                 <div className="mt-6 text-m md:text-lg leading-8 text-gray-400 max-w-2xl md:max-w-3xl lg:max-w-4xl">
                     Here are a few technologies I have worked with in the past:  
 
@@ -49,7 +49,7 @@ export default function Skills(){
                         ))}
                       </div>
                 </div>
-                </Reveal>
+                </FadeUp>
               </div>
             </div>
             <div

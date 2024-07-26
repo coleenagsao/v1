@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { skills, navLinks, work } from '@/app/config';
 import { Polygon, Arrow } from '@/app/components/icons'
-import { Reveal } from "@/app/components/utils/reveal";
+import { FadeUp } from "@/app/components/utils";
 
 export default function Experiences(){
     return (
@@ -12,15 +12,15 @@ export default function Experiences(){
             <div className="mx-auto max-w-4xl lg:max-w-5xl pt-20 lg:py-32">
               <div>
                 {/* Section */}
-                <Reveal>
+                <FadeUp>
                 <h1 className="text-xl font-bold tracking-tight text-gray-200 lg:text-2xl font-mono">
                   <span className="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-400">Work Experience.</span>
                 </h1>
-                </Reveal>
+                </FadeUp>
                 {/* List of Experiences */}
                 <div className="w-full py-4">
                     {work.map((item)=> (
-                        <Reveal key={item}>
+                        <FadeUp key={item}>
                             <Link 
                                 href={item.url} 
                                 target="_blank" 
@@ -82,7 +82,7 @@ export default function Experiences(){
                                     
                                 </div>
                             </Link>
-                        </Reveal>
+                        </FadeUp>
                     ))}
 
                   
