@@ -25,8 +25,8 @@ export const Reveal = ({ children }) => {
                 animate={controls}
                 
                 transition={{ 
-                    opacity: { duration: 0.3, ease: "easeIn" },
-                    y: { duration: 0.3, ease: "easeIn" },
+                    opacity: { duration: 0.5, ease: "easeIn" },
+                    y: { duration: 0.5, ease: "easeIn" },
                 }}
             >
                 {children}
