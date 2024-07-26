@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Hero, About, Skills } from './components/sections';
+import { Hero, About, Skills, Experiences } from './components/sections';
 
 export default function Home() {
   return (
@@ -7,7 +7,7 @@ export default function Home() {
         <Hero/>
         <About/>
         <Skills/>
-
+        <Experiences/>/
     </div>
 
   );
