@@ -23,14 +23,14 @@ export default function Experiences(){
                             href={item.url} 
                             target="_blank" 
                             rel="noopener noreferrer" 
-                            className="group lg:flex lg:px-4 lg:py-5 lg:hover:bg-blue-100/5 lg:hover:ring-1 lg:hover:ring-blue-100/10 lg:hover:rounded-lg duration-300"
+                            className="group md:flex md:px-4 md:py-5 md:hover:bg-blue-100/5 md:hover:ring-1 md:hover:ring-blue-100/10 md:hover:rounded-lg duration-300"
                             onClick={(e) => {
                                 if (!item.url) {
                                 e.preventDefault();
                                 }
                             }}>
                             {/* Work Duration */}
-                            <div className="w-40 text-sm text-gray-400 font-medium font-mono mt-1">
+                            <div className="w-64 lg:w-40 text-sm text-gray-400 font-medium font-mono mt-1">
                                 {item.range}
                             </div>
 
