@@ -6,7 +6,7 @@ import { skills, navLinks } from '@/app/config';
 
 export default function Skills(){
     return (
-        <section id="skills" className="relative isolate px-6 lg:px-8 h-screen">
+        <section id="skills" className="relative isolate px-6 lg:px-8 h-full">
             {/* Gradient Background */}
             <div aria-hidden="true" className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
               <div/>

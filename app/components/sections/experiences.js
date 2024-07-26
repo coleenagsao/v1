@@ -23,7 +23,7 @@ export default function Experiences(){
                             href={item.url} 
                             target="_blank" 
                             rel="noopener noreferrer" 
-                            className="group lg:flex px-4 py-5 hover:bg-blue-100/5 hover:ring-1 hover:ring-blue-100/10 hover:rounded-lg duration-300"
+                            className="group lg:flex lg:px-4 lg:py-5 lg:hover:bg-blue-100/5 lg:hover:ring-1 lg:hover:ring-blue-100/10 lg:hover:rounded-lg duration-300"
                             onClick={(e) => {
                                 if (!item.url) {
                                 e.preventDefault();
@@ -34,14 +34,18 @@ export default function Experiences(){
                                 {item.range}
                             </div>
 
-                            <div className="lg:flex-1 flex-start md:px-10 font-semibold">
+                            <div className="lg:flex-1 flex-start py-2 md:py-0 lg:px-10 font-semibold">
                                 {/* Title and Company */}
-                                <div className="flex text-lg text-gray-300 group-hover:text-blue-300">
-                                    <div href={item.url} className="flex">
-                                        {item.title} @ {item.company} 
-                                        <div className="h-1 w-1 ml-1 text-gray-300 mt-1 group-hover:text-blue-300 group-hover:-translate-y-1 group-hover:translate-x-1 duration-300">
-                                            {item.url && <Arrow className="w-full h-full"/>}
-                                        </div>
+                                <div className="flex flex-wrap text-lg text-gray-300 group-hover:text-blue-300">
+                                    <div href={item.url} className="flex flex-wrap">
+                                        <p>{item.title}</p>
+                                        <div className="ml-1 flex ">
+                                            @ {item.company}
+                                            <span className="inline-block h-1 w-1 md:ml-1 text-gray-300 mt-1 group-hover:text-blue-300 group-hover:-translate-y-1 group-hover:translate-x-1 duration-300">
+                                             {item.url && <Arrow className="inline-block w-full h-full"/>}
+                                        </span>
+                                        </div> 
+                                        
                                     </div> 
                                     
                                 </div>
@@ -63,7 +67,7 @@ export default function Experiences(){
                                     {/* Technologies Used */}
                                     <div className="flex flex-wrap pt-3.5 pl-9">
                                         {item.skills.map((item) => (
-                                            <div key={item} className="mr-3 w-max relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-blue-900 hover:ring-blue-800 text-center flex items-center justify-center">
+                                            <div key={item} className="mr-3 w-max relative rounded-full px-3 my-1 py-1 text-sm leading-6 text-gray-600 ring-1 ring-blue-900 hover:ring-blue-800 text-center flex items-center justify-center">
                                             <div className="font-semibold text-xs text-blue-200 hover:text-blue-300 text-center">
                                             <span aria-hidden="true" className="absolute inset-0" />
                                             {item}
