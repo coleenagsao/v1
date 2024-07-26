@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { Reveal } from "@/app/components/utils/reveal";
 
 export default function Hero(){
     return (
@@ -21,50 +22,67 @@ export default function Hero(){
                 {/* Name and Description */}
                 <div>
                   {/* Greeting */}
-                  <h1 className="font-mono tracking-tight text-gray-200 text-xl lg:text-2xl mb-6">
-                    Halo!<span aria-hidden="true">👋🏻</span>
-                  </h1>
+                  <Reveal>
+                    <h1 className="font-mono tracking-tight text-gray-200 text-xl lg:text-2xl mb-6">
+                        Halo!<span aria-hidden="true">👋🏻</span>
+                    </h1>
+                  </Reveal>
+                  
                   {/* Name */}
-                  <h1 className="text-5xl font-bold tracking-tight text-gray-200 md:text-6xl lg:text-7xl">
-                    I<span aria-hidden="true">&apos;</span>m <span className="text-transparent bg-clip-text bg-gradient-to-b from-blue-200 to-blue-400">Coleen Agsao</span>.
-                  </h1>
+                  <Reveal>
+                    <h1 className="text-5xl font-bold tracking-tight text-gray-200 md:text-6xl lg:text-7xl">
+                      I<span aria-hidden="true">&apos;</span>m <span className="text-transparent bg-clip-text bg-gradient-to-b from-blue-200 to-blue-400">Coleen Agsao</span>.
+                    </h1>
+                  </Reveal>
+                  
+                  
                   {/* Description */}
-                  <p className="mt-6 text-m md:text-lg leading-8 text-gray-400 max-w-2xl md:max-w-3xl lg:max-w-4xl">
-                    A software engineer focused on building above-average digital experiences. Currently, I’m focused on building a national trauma registry on the side with  <span>
-                    <Link href="https://pcs.org.ph/" className="text-blue-300 hover:underline" target="_blank" rel="noopener noreferrer" >Philippine College of Surgeons (PCS)</Link>
-                    </span> and <span>
-                    <Link href="https://jrrmmc.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">Jose R. Reyes Memorial Medical Center (JRRMMC)</Link>
-                    </span>.
-                  </p>
+                  <Reveal>
+                    <p className="mt-6 text-m md:text-lg leading-8 text-gray-400 max-w-2xl md:max-w-3xl lg:max-w-4xl">
+                      A software engineer focused on building above-average digital experiences. Currently, I’m focused on building a national trauma registry on the side with  <span>
+                      <Link href="https://pcs.org.ph/" className="text-blue-300 hover:underline" target="_blank" rel="noopener noreferrer" >Philippine College of Surgeons (PCS)</Link>
+                      </span> and <span>
+                      <Link href="https://jrrmmc.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">Jose R. Reyes Memorial Medical Center (JRRMMC)</Link>
+                      </span>.
+                    </p> 
+                  </Reveal>
 
                 </div>
+                
                 <div className="flex sm:mb-8 pt-6 space-x-3">
-                  <div className="sm:w-auto relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-gray-100/20 text-center flex items-center justify-center">
-                    <a href="#" className="font-semibold text-gray-500 lg:hidden">
-                      <span aria-hidden="true" className="absolute inset-0" />
-                      Bicol, PH
-                    </a>
-                    <a href="#" className="font-semibold text-gray-500 hidden m:block lg:block text-center">
-                      <span aria-hidden="true" className="absolute inset-0" />
-                      Bicol, Philippines
-                    </a>
-                  </div>
-                  <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-gray-100/20 text-center align-middle flex items-center justify-center">
-                    <a href="#" className="font-semibold text-gray-500 lg:hidden">
-                      <span aria-hidden="true" className="absolute inset-0" />
-                      Backend
-                    </a>
-                    <a href="#" className="font-semibold text-gray-500 hidden m:block lg:block text-center">
-                      <span aria-hidden="true" className="absolute inset-0" />
-                      Backend Development
-                    </a>
-                  </div>
-                  <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-yellow-100 text-center flex items-center justify-center">
-                    <a href="#" className="font-semibold text-gray-500 hover:text-yellow-200 ">
-                      <span aria-hidden="true" className="absolute inset-0" />
-                      Turophile
-                    </a>
-                  </div>
+                  <Reveal>
+                    <div className="sm:w-auto relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-gray-100/20 text-center flex items-center justify-center">
+                        <a href="#" className="font-semibold text-gray-500 lg:hidden">
+                          <span aria-hidden="true" className="absolute inset-0" />
+                          Bicol, PH
+                        </a> 
+                        <a href="#" className="font-semibold text-gray-500 hidden m:block lg:block text-center">
+                          <span aria-hidden="true" className="absolute inset-0" />
+                          Bicol, Philippines
+                        </a>
+                    </div>
+                  </Reveal>
+                  <Reveal>
+                    <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-gray-100/20 text-center align-middle flex items-center justify-center">
+                        <a href="#" className="font-semibold text-gray-500 lg:hidden">
+                          <span aria-hidden="true" className="absolute inset-0" />
+                          Backend
+                        </a> 
+                        <a href="#" className="font-semibold text-gray-500 hidden m:block lg:block text-center">
+                          <span aria-hidden="true" className="absolute inset-0" />
+                          Backend Development
+                        </a>
+                    </div>
+                  </Reveal>
+                  <Reveal>
+                    <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-yellow-100 text-center flex items-center justify-center">
+                      
+                        <a href="#" className="font-semibold text-gray-500 hover:text-yellow-200 ">
+                          <span aria-hidden="true" className="absolute inset-0" />
+                          Turophile
+                        </a>  
+                    </div>
+                  </Reveal>
                 </div>
               </div>
               <div
