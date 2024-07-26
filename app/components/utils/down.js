@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
-export const Reveal = ({ children }) => {
+export const Down = ({ children }) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true })
 
@@ -18,7 +18,7 @@ export const Reveal = ({ children }) => {
         <div ref={ref}>
             <motion.div
                 variants={{
-                    hidden: { opacity: 0.01, y: 20 },
+                    hidden: { opacity: 0.01, y: -20 },
                     visible: {  opacity: 1, y: 0 }
                 }}
                 initial="hidden"

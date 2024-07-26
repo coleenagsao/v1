@@ -9,6 +9,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { navLinks, socialMedia } from '../config';
 import { IconLogo, Icon } from "./icons";
 
+import { Reveal, Down } from "@/app/components/utils/down";
+
 export default function Nav(){
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
@@ -16,21 +18,26 @@ export default function Nav(){
             {/* Website Nav */}
             <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-10">
               <div>
+                <Down>
                 <a href="#">
                   <span className="sr-only">Coleen Agsao</span>
                   <div className="h-8 w-8 text-blue-300">
                     <IconLogo />
                   </div>
                 </a>
+                </Down>
               </div>
 
               {/* Navigation Links */}
               <div className="hidden lg:flex lg:gap-x-12 items-center">
                 {navLinks.map((item) => (
-                  <Link key={item.name} href={item.url} className="text-sm font-semibold leading-6 text-gray-200 hover:text-blue-300">
+                  <Down key={item.name}>
+                  <Link href={item.url} className="text-sm font-semibold leading-6 text-gray-200 hover:text-blue-300">
                     {item.name}
                   </Link>
+                  </Down>
                 ))}
+                <Down>
                 <div className="relative rounded px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-blue-900 hover:ring-blue-400">
                   <a href="/AgsaoCT_resume.pdf" 
                         download="AgsaoCT_resume.pdf" className="font-semibold text-blue-200 hover:text-blue-300">
@@ -38,6 +45,7 @@ export default function Nav(){
                     Resume
                   </a>
                 </div>
+                </Down>
                 
               </div>
 
@@ -45,7 +53,10 @@ export default function Nav(){
               <div className="hidden lg:flex gap-x-8 px-6">
                     {socialMedia.map((item) => (
                     <Link key={item.name} href={item.url} target="_blank" rel="noopener noreferrer" className="size-5 text-gray-300 hover:text-blue-300 z-10">
+                      <Down>
                         <Icon name={item.name} />
+                      </Down>
+                        
                     </Link>
                     ))}
               </div>
@@ -58,7 +69,9 @@ export default function Nav(){
                   className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200"
                 >
                   <span className="sr-only">Open main menu</span>
-                  <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+                  <Down>
+                    <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+                  </Down>
                 </button>
               </div>
             </nav>
