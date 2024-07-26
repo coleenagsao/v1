@@ -57,7 +57,7 @@ module.exports = {
       {
         title: 'AI and Machine Learning Apprentice',
         company: 'Dashlabs.ai through KadaKareer',
-        range: 'SEPT 2023 - NOV 2023',
+        range: 'SEPT - NOV 2023',
         description: [
           "Independently spearheaded the development of a case-study specific project aimed at processing health forms through text extraction using Amazon Textract.",
           "Executed text segmentation, organized data utilizing PyPandas, and produced visualizations derived from the extracted data."
@@ -68,7 +68,7 @@ module.exports = {
       {
         title: 'Software Engineering Intern',
         company: 'White Widget',
-        range: 'JUL 2023 - AUG 2023',
+        range: 'JUL - AUG 2023',
         description: [
           "Engaged in a live project, executing feasibility evaluations of prospective technologies. These assessments made a definitive 100% impact on the project's trajectory, endorsing the implementation of OSM and Pelias.",
           'Developed a data ingestion Proof of Concept UI for Pelias, focused on backend utilization of ElasticSearch API and comprehension of the Pelias/csv-importer.'
@@ -79,7 +79,7 @@ module.exports = {
       {
         title: 'Python Tutor',
         company: 'Freelance',
-        range: 'AUG 2021 - OCT 2021',
+        range: 'AUG - OCT 2021',
         description: [
           "Led a successful private tutoring program for 5 non-computer science juniors, delivering 36 hours of foundational programming instruction and practical support over three months.",
         ], 

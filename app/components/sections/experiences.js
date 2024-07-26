@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { skills, navLinks, work } from '@/app/config';
-import { Polygon } from '@/app/components/icons'
+import { Polygon, Arrow } from '@/app/components/icons'
 
 
 export default function Experiences(){
@@ -18,7 +18,17 @@ export default function Experiences(){
                 {/* List of Experiences */}
                 <div className="w-full py-4">
                     {work.map((item)=> (
-                        <div key={item} className="lg:flex py-5">
+                        <Link 
+                            key={item} 
+                            href={item.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="group lg:flex px-4 py-5 hover:bg-blue-100/5 hover:ring-1 hover:ring-blue-100/10 hover:rounded-lg duration-300"
+                            onClick={(e) => {
+                                if (!item.url) {
+                                e.preventDefault();
+                                }
+                            }}>
                             {/* Work Duration */}
                             <div className="w-40 text-sm text-gray-400 font-medium font-mono mt-1">
                                 {item.range}
@@ -26,8 +36,14 @@ export default function Experiences(){
 
                             <div className="lg:flex-1 flex-start md:px-10 font-semibold">
                                 {/* Title and Company */}
-                                <div className="text-lg text-gray-200">
-                                    {item.title}<span><Link href={item.url} className="text-blue-200 hover:underline pl-2">@ {item.company}</Link> </span>    
+                                <div className="flex text-lg text-gray-300 group-hover:text-blue-300">
+                                    <div href={item.url} className="flex">
+                                        {item.title} @ {item.company} 
+                                        <div className="h-1 w-1 ml-1 text-gray-300 mt-1 group-hover:text-blue-300 group-hover:-translate-y-1 group-hover:translate-x-1 duration-300">
+                                            {item.url && <Arrow className="w-full h-full"/>}
+                                        </div>
+                                    </div> 
+                                    
                                 </div>
 
                                 {/* Description */}
@@ -59,7 +75,7 @@ export default function Experiences(){
                                 
                                 
                             </div>
-                        </div>
+                        </Link>
                     ))}
 
                   
