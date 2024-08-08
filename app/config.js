@@ -87,6 +87,46 @@ module.exports = {
         url: ''
       }
     ],
+
+    projects: [
+      {
+        title: 'Code Blue API',
+        type: 'API',
+        image: '/projects/api_cb.png',
+        description: 'An API that facilitates the storage, retrieval, and management of a trauma registry database for both mobile and web-based client.',
+        tech: ['Firebase', 'Node', 'Express'],
+        github: '',
+        external: '',
+        
+      },
+      {
+        title: 'Code Blue',
+        type: 'Web Application',
+        image: '/projects/web_cb.png',
+        description: 'A web application for administrators that streamlines the management and analysis of trauma patient data for the Philippine healthcare system.',
+        tech: ['Code Blue API', 'React', 'Tailwind'],
+        github: '',
+        external: 'https://admin-ph-trauma-registry.netlify.app/',
+      },
+      {
+        title: 'Bridge',
+        type: 'Mobile Application',
+        image: '/projects/mobile_bridge.png',
+        description: 'A social to-do mobile app where users can collaborate on tasks, share progress, and manage their productivity with their social circle.',
+        tech: ['Dart', 'Flutter', 'Firebase'],
+        github: 'https://github.com/coleenagsao/flutter-shared-todo',
+        external: '',
+      },
+      {
+        title: 'Bedev',
+        type: 'Web Application',
+        image: '/projects/mobile_bridge.png',
+        description: 'A full-stack social networking app  that provides a platform for users to connect, share posts, and interact with friends.',
+        tech: ['MongoDB', 'Express', 'React', 'Node'],
+        github: 'https://github.com/coleenagsao/mern-social-site',
+        external: '',
+      }
+    ],
   
     srConfig: (delay = 200, viewFactor = 0.25) => ({
       origin: 'bottom',
