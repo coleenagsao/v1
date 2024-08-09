@@ -21,7 +21,7 @@ export default function Projects(){
                 <div className="w-full py-4">
                     {projects.map((item)=> (
                         <FadeUp key={item}>
-                            <div className="group md:flex md:px-4 md:py-5">
+                            <div className="group md:flex md:px-4 md:py-6">
                                 <div className="relative lg:max-w-[500px]">
                                     <div className="z-50 absolute inset-0 bg-blue-950 opacity-30 hover:opacity-5"></div>
                                     <Image src={item.image} className="object-cover w-full h-full rounded-md" alt="Screengrab of a project" width={500} height={500} />
@@ -75,6 +75,14 @@ export default function Projects(){
                         </FadeUp>
                     ))}
                 </div>
+              </div>
+
+              <div className="md:px-4 py-10">
+              <FadeUp>
+                <h3 className="text-lg font-bold tracking-tight text-gray-200 lg:text-xl ">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-400 font-mono">Other Projects.</span>
+                </h3>
+                </FadeUp>
               </div>
 
             </div>
