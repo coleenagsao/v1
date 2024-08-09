@@ -21,20 +21,35 @@ export default function Projects(){
                 <div className="w-full py-4">
                     {projects.map((item)=> (
                         <FadeUp key={item}>
-                            <div className="group md:flex md:px-4 md:py-6">
+                            <div className="group md:flex md:px-4 py-3 md:py-6">
                                 <div className="relative lg:max-w-[500px]">
                                     <div className="z-50 absolute inset-0 bg-blue-950 opacity-30 hover:opacity-5"></div>
                                     <Image src={item.image} className="object-cover w-full h-full rounded-md" alt="Screengrab of a project" width={500} height={500} />
                                 </div>
-                                <div className="lg:ml-9 flex-wrap justify-between">
+                                <div className="py-4 md:py-0 md:ml-9 flex-wrap justify-between">
                                     {/* Work Duration */}
                                     <div className="w-full text-sm text-blue-300 font-semibold md:text-right">
                                         {item.type}
                                     </div>
 
-                                    {/* Title and Company */}
-                                    <div className="text-2xl text-gray-300 group-hover:text-gray-300 w-full md:text-right font-bold py-4">
+                                    {/* Title of Project */}
+                                    <div className="flex text-xl md:text-2xl text-gray-300 group-hover:text-gray-300 w-full md:text-right md:justify-end font-bold py-2 lg:py-4 items-center">
                                         <p>{item.title}</p> 
+                                        {/* Links */}
+                                        <div className="md:hidden flex text-base text-gray-400 font-normal max-w-lg gap-x-2 space-x-2 items-start px-4">
+                                            {item.github && 
+                                            <div className="size-5">
+                                                <Link key={item.title} href={item.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300 bg-fuchsia-500">
+                                                    <Icon name="GitHub"/>
+                                                </Link>
+                                            </div> }
+                                            {item.external && 
+                                            <div className="size-5">
+                                                <Link key={item.title} href={item.external} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
+                                                    <Redirect  />
+                                                </Link>
+                                            </div> }
+                                        </div>
                                     </div>
 
                                     {/* Description */}
@@ -43,9 +58,9 @@ export default function Projects(){
                                     </div>
 
                                     {/* Technologies Used */}
-                                    <div className="flex flex-wrap md:justify-end text-right w-full pb-4 ">
+                                    <div className="flex flex-wrap md:justify-end text-right w-full pb-3 md:pb-4 ">
                                             {item.tech.map((item) => (
-                                                <div key={item} className="ml-3 w-max relative rounded-full px-3 my-1 py-1 text-sm leading-6 text-gray-600 ring-1 ring-blue-900 hover:ring-blue-800 text-center flex items-center justify-center">
+                                                <div key={item} className="ml-0 mr-3 md:ml-3 md:mr-0 w-max relative rounded-full px-3 my-1 py-1 text-sm leading-6 text-gray-600 ring-1 ring-blue-900 hover:ring-blue-800 text-center flex items-center justify-center">
                                                     <div className="font-semibold text-xs text-blue-200 hover:text-blue-300 text-center">
                                                     <span aria-hidden="true" className="absolute inset-0" />
                                                     {item}
@@ -54,7 +69,7 @@ export default function Projects(){
                                             ))}
                                     </div>
                                     {/* Links */}
-                                    <div className="flex flex-1 text-base text-gray-400 font-normal max-w-lg md:text-right md:justify-end gap-x-2 space-x-2 items-center">
+                                    <div className="hidden md:flex flex-1 text-base text-gray-400 font-normal max-w-lg md:text-right md:justify-end gap-x-2 space-x-2 items-center">
                                         {item.github && 
                                         <div className="size-5">
                                             <Link key={item.title} href={item.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
