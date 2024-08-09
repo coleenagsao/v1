@@ -45,7 +45,7 @@ export default function About(){
                       <div className="flex-1 w-full flex justify-center lg:justify-start">
                         <div className="flex-1 p-6 max-w-xs lg:w-[400px] h-auto">
                           <div className="relative">
-                            <div className="z-50 absolute inset-0 hover:bg-blue-700 bg-blue-800 opacity-30"></div>
+                            <div className="z-50 absolute inset-0 bg-blue-950 opacity-30 hover:opacity-5"></div>
                             <Image src="/me-2.jpeg" className="object-cover w-full h-full rounded-md" alt="Picture of the author" width={500} height={500} />
                           </div>
                         </div> 

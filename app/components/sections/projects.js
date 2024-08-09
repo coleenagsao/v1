@@ -8,7 +8,7 @@ import { FadeUp } from "@/app/components/utils";
 
 export default function Projects(){
     return (
-        <section id='jobs' className="relative isolate px-6 lg:px-8 h-full">
+        <section id='projects' className="relative isolate px-6 lg:px-8 h-full">
             <div className="mx-auto max-w-4xl lg:max-w-5xl pt-20 lg:py-32">
               <div>
                 {/* Section */}
@@ -22,29 +22,30 @@ export default function Projects(){
                     {projects.map((item)=> (
                         <FadeUp key={item}>
                             <div className="group md:flex md:px-4 md:py-5">
-                                <div className="relative lg:mr-12">
-                                    <Image src={item.image} className="object-cover w-full h-full rounded-md" alt="Picture of the project" width={500} height={500} />
+                                <div className="relative lg:max-w-[500px]">
+                                    <div className="z-50 absolute inset-0 bg-blue-950 opacity-30 hover:opacity-5"></div>
+                                    <Image src={item.image} className="object-cover w-full h-full rounded-md" alt="Screengrab of a project" width={500} height={500} />
                                 </div>
                                 <div className="lg:ml-9 flex-wrap justify-between">
                                     {/* Work Duration */}
-                                    <div className="w-full text-sm text-blue-300 font-semibold mb-2 md:text-right">
+                                    <div className="w-full text-sm text-blue-300 font-semibold md:text-right">
                                         {item.type}
                                     </div>
 
                                     {/* Title and Company */}
-                                    <div className="text-2xl py-3 text-gray-300 group-hover:text-gray-300 w-full md:text-right font-bold">
+                                    <div className="text-2xl text-gray-300 group-hover:text-gray-300 w-full md:text-right font-bold py-4">
                                         <p>{item.title}</p> 
                                     </div>
 
                                     {/* Description */}
-                                    <div className="flex-1 text-base text-gray-400 font-normal max-w-lg md:text-right">
+                                    <div className="flex-1 text-base text-gray-400 font-normal max-w-lg md:text-right pb-4 ">
                                         {item.description}
                                     </div>
 
                                     {/* Technologies Used */}
-                                    <div className="flex flex-wrap md:justify-end pt-3.5 text-right w-full ">
+                                    <div className="flex flex-wrap md:justify-end text-right w-full pb-4 ">
                                             {item.tech.map((item) => (
-                                                <div key={item} className="mr-3 w-max relative rounded-full px-3 my-1 py-1 text-sm leading-6 text-gray-600 ring-1 ring-blue-900 hover:ring-blue-800 text-center flex items-center justify-center">
+                                                <div key={item} className="ml-3 w-max relative rounded-full px-3 my-1 py-1 text-sm leading-6 text-gray-600 ring-1 ring-blue-900 hover:ring-blue-800 text-center flex items-center justify-center">
                                                     <div className="font-semibold text-xs text-blue-200 hover:text-blue-300 text-center">
                                                     <span aria-hidden="true" className="absolute inset-0" />
                                                     {item}
@@ -53,17 +54,19 @@ export default function Projects(){
                                             ))}
                                     </div>
                                     {/* Links */}
-                                    <div className="flex flex-1 text-base text-gray-400 font-normal max-w-lg md:text-right md:justify-end gap-x-2 space-x-2 py-4 items-center">
+                                    <div className="flex flex-1 text-base text-gray-400 font-normal max-w-lg md:text-right md:justify-end gap-x-2 space-x-2 items-center">
+                                        {item.github && 
                                         <div className="size-5">
-                                            <Link key={item.title} href={item.github} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-300">
+                                            <Link key={item.title} href={item.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
                                                 <Icon name="GitHub" />
                                             </Link>
-                                        </div>
+                                        </div> }
+                                        {item.external && 
                                         <div>
-                                            <Link key={item.title} href={item.external} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-300">
+                                            <Link key={item.title} href={item.external} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
                                                 <Redirect  />
                                             </Link>
-                                        </div>
+                                        </div> }
                                     </div>
 
 

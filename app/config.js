@@ -106,7 +106,7 @@ module.exports = {
         description: 'A web application for administrators that streamlines the management and analysis of trauma patient data for the Philippine healthcare system.',
         tech: ['Code Blue API', 'React', 'Tailwind'],
         github: '',
-        external: 'https://admin-ph-trauma-registry.netlify.app/',
+        external: 'https://youtu.be/w37PM-vviyM',
       },
       {
         title: 'Bridge',
@@ -120,7 +120,7 @@ module.exports = {
       {
         title: 'Bedev',
         type: 'Web Application',
-        image: '/projects/mobile_bridge.png',
+        image: '/projects/web_bedev.png',
         description: 'A full-stack social networking app  that provides a platform for users to connect, share posts, and interact with friends.',
         tech: ['MongoDB', 'Express', 'React', 'Node'],
         github: 'https://github.com/coleenagsao/mern-social-site',
