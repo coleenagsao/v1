@@ -13,8 +13,25 @@ import { FadeUp, FadeDown } from "@/app/components/utils";
 
 export default function Nav(){
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+    // hide nav when scroll down, set to visible when scroll up
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+      } else {
+        document.getElementById("nav").style.top = "-75px";
+        document.getElementById("nav").style.backgroundColor = "rgba(3,7,18, 0.75)";
+        
+      }
+
+      prevScrollpos = currentScrollPos;
+    }
+
     return (
-        <header className="absolute inset-x-0 top-0 z-50">
+        <header id="nav" className="fixed inset-x-0 top-0 z-50">
             {/* Website Nav */}
             <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-10">
               <div>

@@ -7,7 +7,7 @@ export default function Footer(){
     return(
         <footer>
             {/* Website Nav */}
-            <nav aria-label="Global" className="lg:flex lg:justify-between lg:align-center grid place-items-center w-full py-10 lg:py-6 lg:px-8 space-y-3">
+            <nav aria-label="Global" className="lg:flex lg:justify-between lg:align-center lg:items-center grid place-items-center w-full py-10 lg:py-6 lg:px-8 space-y-3">
               
               {/* Navigation Links */}
                 <div className="flex gap-x-8 items-center lg:order-2">
@@ -22,9 +22,6 @@ export default function Footer(){
                         © 2024 Designed & Built by Coleen Agsao 
                     </text>
                 </div>
-                
-                
-
             </nav>
         </footer>
     )
