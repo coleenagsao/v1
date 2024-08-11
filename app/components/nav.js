@@ -16,7 +16,6 @@ export default function Nav(){
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     // hide nav when scroll down, set to visible when scroll up
-    
     if (typeof window !== 'undefined') {
       var prevScrollpos = window.pageYOffset;
 
@@ -80,7 +79,7 @@ export default function Nav(){
               </div>
 
               {/* Social Media Links */}
-              <div className="hidden lg:flex gap-x-8 px-6">
+              <div className="hidden lg:flex gap-x-8">
                     {socialMedia.map((item) => (
                     <Link key={item.name} href={item.url} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-300 z-10">
                       <FadeDown>
