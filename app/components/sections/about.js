@@ -23,10 +23,9 @@ export default function About(){
                     <div className="flex-2 max-w-2xl md:max-w-3xl lg:max-w-4xl mr-6 text-md md:text-lg pt-6 md:pt-1">
                       <FadeUp>
                         <p className="lg:mt-6 leading-8 text-gray-400">
-                          I’m currently a freelance full-stack web developer working with {' '} 
-                          <Link href="https://pcs.org.ph/" className="text-blue-300 hover:underline" target="_blank" rel="noopener noreferrer" >PCS</Link> {' '} and {' '} 
-                          <Link href="https://jrrmmc.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">JRRMMC </Link> {' '} to revolutionize the use of electronic medical records in the Philippines as I am awaiting graduation at the {' '}
-                          <Link href="https://uplb.edu.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">University of the Philippines Los Banos</Link>. While in the university, I have worked with a {' '}
+                          I’m currently a freelance full-stack web developer working {' '} 
+                          <Link href="https://jrrmmc.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">JRRMMC </Link> {' '} to revolutionize the use of electronic medical records in the Philippines. I earned my BS Computer Science degree from the {' '}
+                          <Link href="https://uplb.edu.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">University of the Philippines Los Banos</Link> last August. While in the university, I have worked with a {' '}
                           <Link href="https://whitewidget.com/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">software design and engineering agency</Link>, a {' '}
                           <Link href="https://help.dashlabs.ai/#who-are-we" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">start up</Link> through {' '} 
                           <Link href="https://www.kadakareer.com/virtual-apprenticeship/home" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">KadaKareer</Link>, and a {' '}
@@ -36,7 +35,7 @@ export default function About(){
                         I enjoy planning and making things function efficiently behind the scenes. While my primary love is for backend development, I take pride in transforming designs into living, breathing realities when working on the frontend. My goal is to build applications that are robust and scalable that stand the test of time, while providing an engaging and intuitive user experience. 
                         </p>
                         <p className="mt-6 text-m m:text-lg leading-8 text-gray-400">
-                        <span className="font-semibold">When I’m not working</span>, you’ll find me learning how to cook, organizing my room, eating anything with cheese, or figuring out how to make my second brain system better.
+                        <span className="font-semibold text-gray-300">When I’m not working</span>, you’ll find me learning how to cook, organizing my room, eating anything with cheese, or figuring out how to make my second brain system better.
                         </p>
                     </FadeUp>
                     </div>
