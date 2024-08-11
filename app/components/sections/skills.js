@@ -7,13 +7,8 @@ import { FadeUp } from "@/app/components/utils";
 
 export default function Skills(){
     return (
-        <section id="skills" className="relative isolate px-6 lg:px-8 h-full">
-            {/* Gradient Background */}
-            <div aria-hidden="true" className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-              <div/>
-              </div>
-
-            <div className="mx-auto max-w-4xl lg:max-w-5xl py-32 sm:py-48 lg:py-56 ">
+        <section id="skills" className="relative isolate px-6 lg:px-8">
+            <div className="mx-auto max-w-4xl lg:max-w-5xl py-16">
               {/* Name and Description */}
               <div>
 
