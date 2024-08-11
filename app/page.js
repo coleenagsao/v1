@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Hero, About, Skills, Experiences, Projects } from './components/sections';
+import { Hero, About, Skills, Experiences, Projects, Contact } from './components/sections';
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
         <Skills/>
         <Experiences/>
         <Projects/>
+        <Contact/>
     </div>
 
   );
