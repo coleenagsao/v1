@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { skills, navLinks, work } from '@/app/config';
 // import { Polygon, Arrow } from '/icons'
+import { ArrowUpRight } from "lucide-react";
 import { FadeUp } from "@/app/components/utils";
 
 export default function Experiences(){
@@ -38,13 +39,17 @@ export default function Experiences(){
 
                                 <div className="lg:flex-1 flex-start py-2 md:py-0 lg:px-10 font-semibold">
                                     {/* Title and Company */}
-                                    <div className="flex flex-wrap text-lg text-gray-300 group-hover:text-blue-300">
+                                    <div className="flex flex-wrap text-lg text-gray-300 group-hover:text-blue-300 items-center">
                                         <div href={item.url} className="flex flex-wrap">
                                             <p>{item.title}</p>
                                             <div className="ml-1 flex ">
                                                 @ {item.company}
-                                                <span className="inline-block h-1 w-1 md:ml-1 text-gray-300 mt-1 group-hover:text-blue-300 group-hover:-translate-y-1 group-hover:translate-x-1 duration-300">
-                                                {/* {item.url && <Arrow className="inline-block w-full h-full"/>} */}
+                                                <span className="inline-block h-5 w-5 ml-1 md:ml-2 text-gray-300  group-hover:text-blue-300 group-hover:-translate-y-1 group-hover:translate-x-1 duration-300 ">
+                                                {item.url && 
+                                                <ArrowUpRight 
+                                                    size={20}
+                                                    className="inline-block w-full h-full"
+                                                />}
                                             </span>
                                             </div> 
                                             
