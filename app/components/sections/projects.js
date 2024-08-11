@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { skills, navLinks, work, projects } from '@/app/config';
-// import { Redirect, Arrow, Icon } from '/icons'
+import { Github, ExternalLink } from "lucide-react";
 import { FadeUp } from "@/app/components/utils";
 
 export default function Projects(){
@@ -50,15 +50,15 @@ export default function Projects(){
                                         {/* Links */}
                                         <div className="md:hidden flex text-base text-gray-400 font-normal max-w-lg gap-x-2 space-x-2 items-start px-4">
                                             {item.github && 
-                                            <div className="size-5">
-                                                <Link key={item.title} href={item.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300 bg-fuchsia-500">
-                                                    {/* <Icon name="GitHub"/> */}
+                                            <div>
+                                                <Link key={item.title} href={item.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
+                                                    <Github className="w-5 h-5"/>
                                                 </Link>
                                             </div> }
                                             {item.external && 
-                                            <div className="size-5">
-                                                <Link key={item.title} href={item.external} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
-                                                    {/* <Redirect  /> */}
+                                            <div>
+                                                 <Link key={item.title} href={item.external} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
+                                                    <ExternalLink className="w-5 h-5"/> 
                                                 </Link>
                                             </div> }
                                         </div>
@@ -83,15 +83,15 @@ export default function Projects(){
                                     {/* Links */}
                                     <div className="hidden md:flex flex-1 text-base text-gray-400 font-normal max-w-lg md:text-right md:justify-end gap-x-2 space-x-2 items-center">
                                         {item.github && 
-                                        <div className="size-5">
-                                            <Link key={item.title} href={item.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
-                                                {/* <Icon name="GitHub" /> */}
+                                        <div>
+                                            <Link key={item.title} href={item.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 w-2 h-2 hover:text-blue-300">
+                                                <Github className="w-6 h-6"/>
                                             </Link>
-                                        </div> }
+                                         </div> }
                                         {item.external && 
                                         <div>
                                             <Link key={item.title} href={item.external} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
-                                                {/* <Redirect  /> */}
+                                                <ExternalLink className="w-6 h-6"/> 
                                             </Link>
                                         </div> }
                                     </div>
@@ -118,21 +118,20 @@ export default function Projects(){
                         <div className="flex-wrap py-4 space-y-2.5">
                             {/* Title of Project */}
                             <div className="flex text-lg text-gray-300 group-hover:text-gray-300 w-full md:text-right font-bold items-center flex-wrap space-x-2 ">
-                                <span className="mr-2 md:mr-4">{item.title}</span> 
+                                <span className="mr-2 md:mr-3">{item.title}</span> 
 
                                 {item.github && 
-                                        <span className="size-5">
+                                        <div>
                                             <Link key={item.title} href={item.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
-                                                {/* <Icon name="GitHub"/> */}
+                                                <Github className="w-5 h-5"/>
                                             </Link>
-                                        </span> }
-
-                                {item.external && 
-                                    <span className="size-6">
-                                        <Link key={item.title} href={item.external} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
-                                            {/* <Redirect  /> */}
-                                        </Link>
-                                    </span> }
+                                         </div> }
+                                        {item.external && 
+                                        <div>
+                                            <Link key={item.title} href={item.external} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
+                                                <ExternalLink className="w-5 h-5"/> 
+                                            </Link>
+                                        </div> }
                             
                                
                             </div>
