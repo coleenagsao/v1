@@ -1,3 +1,5 @@
+import { Github, Linkedin } from 'lucide-react';
+
 module.exports = {
     email: 'coleentherese.agsao@gmail.com',
   
@@ -5,10 +7,12 @@ module.exports = {
       {
         name: 'GitHub',
         url: 'https://github.com/coleenagsao',
+        icon: <Github size={20}/>
       },
       {
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/coleenagsao',
+        icon: <Linkedin size={20} />
       },
     ],
   
