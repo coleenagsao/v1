@@ -8,7 +8,7 @@ import { FadeUp } from "@/app/components/utils";
 export default function Contact(){
     return (
         <section id='contact' className="relative isolate px-6 lg:px-8 ">
-            <div className="mx-auto max-w-4xl lg:max-w-5xl py-48">
+            <div className="mx-auto max-w-4xl lg:max-w-5xl py-28 md:py-44">
                   {/* Section */}
                   <FadeUp> 
                     <div className="ml-3 flex-2 max-w-2xl md:max-w-3xl lg:max-w-4xl md:pt-5 space-y-4">

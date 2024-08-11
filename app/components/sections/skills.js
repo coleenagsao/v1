@@ -8,7 +8,7 @@ import { FadeUp } from "@/app/components/utils";
 export default function Skills(){
     return (
         <section id="skills" className="relative isolate px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl lg:max-w-5xl py-16">
+            <div className="mx-auto max-w-4xl lg:max-w-5xl py-28 md:py-32">
               {/* Name and Description */}
               <div>
 

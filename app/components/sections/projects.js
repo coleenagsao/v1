@@ -106,7 +106,7 @@ export default function Projects(){
 
               <div className="md:px-4">
                 <FadeUp>
-                    <h3 className="text-xl font-bold tracking-tight text-gray-200 lg:text-xl py-4 text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-400 font-mono">
+                    <h3 className="text-xl font-bold tracking-tight text-gray-200 lg:text-xl md:py-4 text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-400 font-mono">
                         Other Projects.
                     </h3>
                 </FadeUp>
@@ -117,8 +117,8 @@ export default function Projects(){
                         {!item.featured && 
                         <div className="flex-wrap py-4 space-y-2.5">
                             {/* Title of Project */}
-                            <div className="flex text-lg text-gray-300 group-hover:text-gray-300 w-full md:text-right font-bold items-center flex-wrap space-x-2">
-                                <span className="mr-4">{item.title}</span> 
+                            <div className="flex text-lg text-gray-300 group-hover:text-gray-300 w-full md:text-right font-bold items-center flex-wrap space-x-2 ">
+                                <span className="mr-2 md:mr-4">{item.title}</span> 
 
                                 {item.github && 
                                         <span className="size-5">
