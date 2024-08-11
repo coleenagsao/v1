@@ -30,9 +30,9 @@ export default function Skills(){
                                 <div className="mr-5 mt-4 text-gray-200 font-semibold ">
                                     {key}:
                                 </div>
-                                <span className="flex flex-wrap">
+                                <span className="flex flex-wrap ">
                                     {value.map((item) => (
-                                        <div key={item} className="my-1 mr-3 w-max relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-blue-900 hover:ring-blue-800 text-center flex items-center justify-center">
+                                        <div key={item} className="my-2 md:my-1 mr-3 relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-blue-900 hover:ring-blue-800 text-center flex items-center justify-center w-fit h-fit">
                                         <div className="font-semibold text-blue-200 hover:text-blue-300 text-center">
                                           <span aria-hidden="true" className="absolute inset-0" />
                                           {item}
