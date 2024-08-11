@@ -3,7 +3,7 @@ import { Hero, About, Skills, Experiences, Projects, Contact } from './component
 
 export default function Home() {
   return (
-    <div className="bg-gray-950">
+    <div className="bg-slate-950">
         <Hero/>
         <About/>
         <Skills/>
