@@ -19,12 +19,15 @@ export default function Nav(){
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
       
+      if (currentScrollPos == 0) {
+        document.getElementById("nav").style.backgroundColor = "rgba(3,7,18, 0)";
+        document.getElementById("nav").style.transitionDuration = "500ms";
+      }
       if (prevScrollpos > currentScrollPos) {
         document.getElementById("nav").style.top = "0";
       } else {
         document.getElementById("nav").style.top = "-75px";
-        document.getElementById("nav").style.backgroundColor = "rgba(3,7,18, 0.75)";
-        
+        document.getElementById("nav").style.backgroundColor = "rgba(3,7,18, 0.75)";        
       }
 
       prevScrollpos = currentScrollPos;
