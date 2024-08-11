@@ -7,7 +7,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 import { navLinks, socialMedia } from '../config';
-import { IconLogo, Icon } from "./icons";
+// import { IconLogo, Icon } from "/icons";
 
 import { FadeUp, FadeDown } from "@/app/components/utils";
 
@@ -48,7 +48,7 @@ export default function Nav(){
                 <a href="#">
                   <span className="sr-only">Coleen Agsao</span>
                   <div className="h-8 w-8 text-blue-300">
-                    <IconLogo />
+                    {/* <IconLogo /> */}
                   </div>
                 </a>
                 </FadeUp>
@@ -80,7 +80,7 @@ export default function Nav(){
                     {socialMedia.map((item) => (
                     <Link key={item.name} href={item.url} target="_blank" rel="noopener noreferrer" className="size-5 text-gray-300 hover:text-blue-300 z-10">
                       <FadeDown>
-                        <Icon name={item.name} />
+                        {/* <Icon name={item.name} /> */}
                       </FadeDown>
                         
                     </Link>
@@ -109,7 +109,7 @@ export default function Nav(){
                   <a href="#" className="-m-1.5 p-1.5">
                     <span className="sr-only">Coleen Agsao</span>
                     <div className="h-8 w-8 text-blue-300">
-                        <IconLogo />
+                        {/* <IconLogo /> */}
                     </div>
                   </a>
                   <button

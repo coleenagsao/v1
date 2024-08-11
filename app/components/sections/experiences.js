@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { skills, navLinks, work } from '@/app/config';
-import { Polygon, Arrow } from '@/app/components/icons'
+// import { Polygon, Arrow } from '/icons'
 import { FadeUp } from "@/app/components/utils";
 
 export default function Experiences(){
@@ -44,7 +44,7 @@ export default function Experiences(){
                                             <div className="ml-1 flex ">
                                                 @ {item.company}
                                                 <span className="inline-block h-1 w-1 md:ml-1 text-gray-300 mt-1 group-hover:text-blue-300 group-hover:-translate-y-1 group-hover:translate-x-1 duration-300">
-                                                {item.url && <Arrow className="inline-block w-full h-full"/>}
+                                                {/* {item.url && <Arrow className="inline-block w-full h-full"/>} */}
                                             </span>
                                             </div> 
                                             
@@ -57,7 +57,7 @@ export default function Experiences(){
                                         {item.description.map((desc) => (
                                             <div key={desc} className="flex flex-2 align-top py-1">
                                                 <div className="h-3 w-3 text-blue-300 mt-1">
-                                                    <Polygon className="w-full h-full"/>
+                                                    {/* <Polygon className="w-full h-full"/> */}
                                                 </div>
                                                 
                                                 <div className="pl-6 flex-1 text-base text-gray-400 font-normal max-w-4xl">

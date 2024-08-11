@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { skills, navLinks, work, projects } from '@/app/config';
-import { Redirect, Arrow, Icon } from '@/app/components/icons'
+// import { Redirect, Arrow, Icon } from '/icons'
 import { FadeUp } from "@/app/components/utils";
 
 export default function Projects(){
@@ -52,13 +52,13 @@ export default function Projects(){
                                             {item.github && 
                                             <div className="size-5">
                                                 <Link key={item.title} href={item.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300 bg-fuchsia-500">
-                                                    <Icon name="GitHub"/>
+                                                    {/* <Icon name="GitHub"/> */}
                                                 </Link>
                                             </div> }
                                             {item.external && 
                                             <div className="size-5">
                                                 <Link key={item.title} href={item.external} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
-                                                    <Redirect  />
+                                                    {/* <Redirect  /> */}
                                                 </Link>
                                             </div> }
                                         </div>
@@ -85,13 +85,13 @@ export default function Projects(){
                                         {item.github && 
                                         <div className="size-5">
                                             <Link key={item.title} href={item.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
-                                                <Icon name="GitHub" />
+                                                {/* <Icon name="GitHub" /> */}
                                             </Link>
                                         </div> }
                                         {item.external && 
                                         <div>
                                             <Link key={item.title} href={item.external} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
-                                                <Redirect  />
+                                                {/* <Redirect  /> */}
                                             </Link>
                                         </div> }
                                     </div>
@@ -123,14 +123,14 @@ export default function Projects(){
                                 {item.github && 
                                         <span className="size-5">
                                             <Link key={item.title} href={item.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
-                                                <Icon name="GitHub"/>
+                                                {/* <Icon name="GitHub"/> */}
                                             </Link>
                                         </span> }
 
                                 {item.external && 
                                     <span className="size-6">
                                         <Link key={item.title} href={item.external} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-300">
-                                            <Redirect  />
+                                            {/* <Redirect  /> */}
                                         </Link>
                                     </span> }
                             
