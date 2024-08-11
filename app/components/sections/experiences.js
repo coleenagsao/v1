@@ -3,8 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { skills, navLinks, work } from '@/app/config';
-// import { Polygon, Arrow } from '/icons'
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, CircleCheck } from "lucide-react";
 import { FadeUp } from "@/app/components/utils";
 
 export default function Experiences(){
@@ -61,8 +60,8 @@ export default function Experiences(){
                                     <div className="pt-4 flex flex-col ml-4">
                                         {item.description.map((desc) => (
                                             <div key={desc} className="flex flex-2 align-top py-1">
-                                                <div className="h-3 w-3 text-blue-300 mt-1">
-                                                    {/* <Polygon className="w-full h-full"/> */}
+                                                <div className="h-5 w-5 text-blue-300 mt-1">
+                                                    <CircleCheck className="w-full h-full"/>
                                                 </div>
                                                 
                                                 <div className="pl-6 flex-1 text-base text-gray-400 font-normal max-w-4xl">
