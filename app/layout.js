@@ -4,15 +4,10 @@ import { Nav, Footer } from './components';
 
 const inter = Inter({ subsets: ["latin"] });
 
-// const poppins = Poppins({
-//   weight: '400',
-//   subsets: ['latin'],
-//   display: 'swap',
-// })
-
 export const metadata = {
   title: "Coleen Agsao",
   description: "Coleen Agsao is a software engineer dedicated to creating above-average digital experiences.",
+  metadataBase: new URL('https://coleenagsao.com/'), 
 };
 
 export default function RootLayout({ children }) {
