@@ -11,12 +11,12 @@ export default function Contact(){
             <div className="mx-auto max-w-4xl lg:max-w-5xl py-28 md:py-44">
                   {/* Section */}
                   <FadeUp> 
-                    <div className="ml-3 flex-2 max-w-2xl md:max-w-3xl lg:max-w-4xl md:pt-5 space-y-4">
+                    <div className="ml-3 flex-2 md:pt-5 space-y-4">
                         <h1 className="font-extrabold text-2xl lg:text-3xl flex justify-center w-full">
                             <p className="text-transparent bg-clip-text bg-gradient-to-b from-gray-100 to-gray-300">Get in touch</p><span aria-hidden="true">👋🏻</span>
                         </h1>
                         <p className="text-xl text-gray-300 text-center leading-8">
-                            I’m currently looking for <span className="font-bold text-blue-300">work opportunities</span>. I also welcome <span className="font-bold text-blue-300">web application commissions</span>. Feel free to reach out!
+                            I am seeking <span className="font-bold text-blue-300">work opportunities</span> that has a strong learning environmment. I also welcome <span className="font-bold text-blue-300">web application commissions</span> and excited to collaborate on any innovative projects. Feel free to reach out!
                         </p> 
                         
                         <div className="flex justify-center w-full py-4">
