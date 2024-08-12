@@ -36,7 +36,7 @@ export default function Contact(){
             </div>
             <div
               aria-hidden="true"
-              className="absolute inset-x-0 top-[calc(100%-40rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-38rem)]"
+              className="absolute inset-x-0 top-[calc(100%-20rem)] -z-20 transform-gpu overflow-hidden blur-3xl md:top-[calc(100%-38rem)]"
             >
               <div
                 style={{

@@ -1,12 +1,16 @@
 "use client"
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { skills, navLinks, work, projects } from '@/app/config';
+import { skills, navLinks, work, featured, projects } from '@/app/config';
 import { Github, ExternalLink } from "lucide-react";
 import { FadeUp } from "@/app/components/utils";
 
 export default function Projects(){
+    const min = 4;
+    const [count, setCount] = useState(min); 
+
     return (
         <section id='projects' className="relative isolate px-6 lg:px-8 py-20">
             <div className="mx-auto max-w-4xl lg:max-w-5xl">
@@ -30,9 +34,8 @@ export default function Projects(){
                 </FadeUp>
                 {/* List of Featured Projects */}
                 <div className="w-full py-4">
-                    {projects.map((item)=> (
-                        <FadeUp key={item}>
-                            {item.featured && 
+                    {featured.map((item, index)=> (
+                        <FadeUp key={index}>
                             <div className="group md:flex md:px-4 py-3 md:py-6">
                                 <div className="relative lg:max-w-[500px]">
                                     <div className="z-50 absolute inset-0 bg-blue-950 opacity-30 hover:opacity-5"></div>
@@ -98,9 +101,10 @@ export default function Projects(){
 
 
                                 </div>
-                            </div>}
+                            </div>
                         </FadeUp>
                     ))}
+    
                 </div>
               </div>
 
@@ -112,9 +116,8 @@ export default function Projects(){
                 </FadeUp>
 
                 {/* List of Other Projects */}
-                {projects.map((item) => (
-                    <FadeUp key={item}>
-                        {!item.featured && 
+                {projects.slice(0,count).map((item, index) => (
+                    <FadeUp key={index}> 
                         <div className="flex-wrap py-4 space-y-2.5">
                             {/* Title of Project */}
                             <div className="flex text-lg text-gray-300 group-hover:text-gray-300 w-full md:text-right font-bold items-center flex-wrap space-x-2 ">
@@ -153,9 +156,29 @@ export default function Projects(){
                                 ))}
                            </div>
 
-                        </div>}
-                 </FadeUp>
-                ))}        
+                        </div>       
+                    </FadeUp>
+                ))}  
+                <FadeUp>
+                <div className="relative w-full flex justify-center my-3 z-20">
+                    {count == min && <div 
+                        className="rounded px-5 py-3 text-sm leading-6 ring-1 ring-blue-900 hover:ring-blue-400 font-semibold text-blue-200 hover:text-blue-300 max-w-fit" 
+                        onClick={() => {
+                            setCount(projects.length)
+                            console.log("Clicked")
+                        }}>
+                        Show more
+                    </div>}
+                    {count == projects.length && <div 
+                        className="rounded px-5 py-3 text-sm leading-6 ring-1 ring-blue-900 hover:ring-blue-400 font-semibold text-blue-200 hover:text-blue-300 max-w-fit" 
+                        onClick={() => {
+                            setCount(min)
+                            console.log("Clicked")
+                        }}>
+                        Show less
+                    </div>}
+                </div>  
+                </FadeUp>   
               </div>
 
             </div>

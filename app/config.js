@@ -92,7 +92,7 @@ module.exports = {
       }
     ],
 
-    projects: [
+    featured: [
       {
         title: 'Code Blue API',
         type: 'API',
@@ -134,6 +134,9 @@ module.exports = {
         external: '',
         featured: true,
       },
+    ],
+
+    projects: [
       {
         title: 'AutoExtractMD: A Medical Form Extractor',
         type: 'Desktop App',
