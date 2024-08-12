@@ -159,26 +159,23 @@ export default function Projects(){
                         </div>       
                     </FadeUp>
                 ))}  
-                <FadeUp>
+                
                 <div className="relative w-full flex justify-center my-3 z-20">
-                    {count == min && <div 
+                    {count == min && <FadeUp><div 
                         className="rounded px-5 py-3 text-sm leading-6 ring-1 ring-blue-900 hover:ring-blue-400 font-semibold text-blue-200 hover:text-blue-300 max-w-fit" 
                         onClick={() => {
                             setCount(projects.length)
-                            console.log("Clicked")
                         }}>
                         Show more
-                    </div>}
-                    {count == projects.length && <div 
+                    </div> </FadeUp>}
+                    {count == projects.length && <FadeUp><div 
                         className="rounded px-5 py-3 text-sm leading-6 ring-1 ring-blue-900 hover:ring-blue-400 font-semibold text-blue-200 hover:text-blue-300 max-w-fit" 
                         onClick={() => {
                             setCount(min)
-                            console.log("Clicked")
                         }}>
                         Show less
-                    </div>}
-                </div>  
-                </FadeUp>   
+                    </div></FadeUp>}
+                </div>   
               </div>
 
             </div>
