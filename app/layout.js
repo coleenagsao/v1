@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Coleen Agsao",
-  description: "Coleen Agsao is a software engineer dedicated to creating above-average digital experiences. While her primary passion lies in backend development, she also take pride in bringing designs to life through frontend work.",
+  description: "Coleen Agsao is a software engineer dedicated to creating above-average digital experiences.",
 };
 
 export default function RootLayout({ children }) {
