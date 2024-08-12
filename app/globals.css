@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --foreground-rgb: 75, 0, 0;
+  --background-start-rgb: 2, 6, 23;
   --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --background-start-rgb: 2, 6, 23;
     --background-end-rgb: 0, 0, 0;
   }
 }
@@ -30,4 +30,24 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(75 85 99 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(75 85 99);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(55 65 81);
 }
