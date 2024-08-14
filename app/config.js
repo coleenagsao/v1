@@ -210,16 +210,6 @@ module.exports = {
         external: '',
         featured: false,
       },
-      {
-        title: 'Map Search',
-        type: 'Web Application',
-        image: '',
-        description: "A website that allows users search for locations using a user-friendly search bar with autocomplete capabilities. This also allows for interaction with basic map features, including zooming into predefined locations added via GeoJSON data",
-        tech: ['Vue', 'Typescript', 'OSM', 'Pelias'],
-        github: 'https://github.com/coleenagsao/vue-ts-osm-pelias-search',
-        external: '',
-        featured: false,
-      },
     ],
   
     srConfig: (delay = 200, viewFactor = 0.25) => ({
