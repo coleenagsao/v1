@@ -196,7 +196,7 @@ module.exports = {
         description: "With a focus on the application of object-oriented programming principles, Space Shooters is a pixel shooting arcade game, featuring a boss encounter and a variety of power-ups to aid the player. Working with a partner, I implemented the splash screen, bullet shooting, bullet-enemy collision detection, and power ups.",
         notes: "My partner implemented the status bar, enemy and boss enemy spawning, time checking, and winning status check",
         tech: ['Java', 'JavaFX'],
-        github: 'https://github.com/coleenagsao/java-space-shooter-gamer',
+        github: 'https://github.com/coleenagsao/java-space-shooter-game',
         external: '',
         featured: false,
       },
