@@ -175,7 +175,7 @@ module.exports = {
         description: "The first iteration of my personal portfolio website, which also served as my introduction to Next.js.",
         tech: ['Next.js', 'Tailwind'],
         github: 'https://github.com/coleenagsao/v1',
-        external: '',
+        external: 'https://www.coleenagsao.com/',
         featured: false,
       },
       {
