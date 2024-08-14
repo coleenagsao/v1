@@ -141,10 +141,10 @@ module.exports = {
         title: 'AutoExtractMD: A Medical Form Extractor',
         type: 'Desktop App',
         image: '',
-        description: "During my AI and ML apprenticeship in Dashlabs.ai through Kadakareer, I developed a program that automatically scans and extracts information, specifically, key-value pairs, from forms and records in jpg/png. Additionally, I also provided a visualization in the form of a pie chart can be generated based on the user's chosen variable.",
+        description: "During my AI and ML apprenticeship in Dashlabs.ai through Kadakareer, I developed a desktop application that automatically scans and extracts information, specifically, key-value pairs, from forms and records in jpg/png. Additionally, I also provided a visualization in the form of a pie chart can be generated based on the user's chosen variable.",
         tech: ['Python', 'AWS Textract', 'Pypandas'],
         github: 'https://github.com/coleenagsao/py-autoextractMD',
-        external: '',
+        external: 'https://drive.google.com/file/d/10OLgohEj3MOdJRx-6x_Al2qK3UqRp_vL/view?usp=sharing',
         featured: false,
       }, 
       {
