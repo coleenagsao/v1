@@ -153,8 +153,8 @@ module.exports = {
         image: '',
         description: 'An interactive Python application using PyGame that allows users to solve the 8-puzzle game with three AI agents: BFS, DFS, and A-Star Search, providing various solution methods.',
         tech: ['Python'],
-        github: 'https://github.com/coleenagsao/mern-social-site',
-        external: '',
+        github: 'https://github.com/coleenagsao/py-ai-eight-puzzle-game',
+        external: 'https://youtu.be/XOyG4dALBA8',
         featured: false,
       }, 
       {
