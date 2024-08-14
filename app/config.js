@@ -41,7 +41,7 @@ module.exports = {
 
     skills: {
       Languages: ['HTML', 'CSS', 'JavaScript', 'Python', 'C', 'Java', 'R', 'SQL'],
-      Frameworks: ['React', 'Vue', 'Tailwind', 'Bootstrap', 'Bulma'],
+      Frameworks: ['React', 'Vue', 'Next.js', 'Tailwind', 'Bootstrap', 'Bulma'],
       Tools: ['MongoDB', 'Firebase', 'Git', 'GitHub', 'Postman', 'Insomnia'],
       Design: ['Figma', 'Prototyping', 'Wireframing', 'User Testing']
     },
