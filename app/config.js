@@ -48,7 +48,7 @@ module.exports = {
 
     work: [
       {
-        title: 'Full Stack Developer (Part-time)',
+        title: 'Full-Stack Developer (Part-time)',
         company: 'Freelance',
         range: 'JUL 2024 - PRESENT',
         description: [
