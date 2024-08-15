@@ -39,9 +39,8 @@ export default function Hero(){
                   {/* Description */}
                   <FadeUp>
                     <p className="mt-6 text-m md:text-lg leading-8 text-gray-400 max-w-2xl md:max-w-3xl lg:max-w-4xl">
-                      A software engineer focused on building above-average digital experiences. Currently, I’m focused on building a national trauma registry on the side with the leading trauma center in the Philippines, <span>
-                      <Link href="https://jrrmmc.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">Jose R. Reyes Memorial Medical Center (JRRMMC)</Link>
-                      </span>.
+                      A software engineer focused on building above-average digital experiences. Currently, I’m focused on collaborating on the side with <span>
+                      <Link href="https://jrrmmc.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">Jose R. Reyes Memorial Medical Center (JRRMMC)</Link></span>, the leading trauma center in the Philippines, to revolutionize the use of electronic medical records in the country.
                     </p> 
                   </FadeUp>
 
@@ -73,12 +72,12 @@ export default function Hero(){
                     </div>
                   </FadeUp>
                   <FadeUp>
-                    <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-yellow-100 text-center flex items-center justify-center">
+                    <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-yellow-100/80 text-center flex items-center justify-center">
                       
-                        <a href="#" className="font-semibold text-gray-500 hover:text-yellow-200 ">
+                        <div className="font-semibold text-gray-500 hover:text-yellow-200/80">
                           <span aria-hidden="true" className="absolute inset-0" />
                           Turophile
-                        </a>  
+                        </div>  
                     </div>
                   </FadeUp>
                 </div>
