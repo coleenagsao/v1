@@ -72,9 +72,9 @@ export default function Hero(){
                     </div>
                   </FadeUp>
                   <FadeUp>
-                    <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 hover:ring-yellow-100/80 text-center flex items-center justify-center">
+                    <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-200/10 text-center flex items-center justify-center hover:ring-gray-100/20">
                       
-                        <div className="font-semibold text-gray-500 hover:text-yellow-200/80">
+                        <div className="font-semibold text-gray-500  hover:cursor-cheese  ">
                           <span aria-hidden="true" className="absolute inset-0" />
                           Turophile
                         </div>  
