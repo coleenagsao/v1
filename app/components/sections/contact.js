@@ -16,7 +16,7 @@ export default function Contact(){
                             <p className="text-transparent bg-clip-text bg-gradient-to-b from-gray-100 to-gray-300">Get in touch</p><span aria-hidden="true">👋🏻</span>
                         </h1>
                         <p className="text-xl text-gray-300 text-center leading-8">
-                            I am seeking <span className="font-bold text-blue-300">work opportunities</span> that has a strong learning environmment. I also welcome <span className="font-bold text-blue-300">web application commissions</span> and excited to collaborate on any innovative projects. Feel free to reach out!
+                            I am seeking <span className="font-bold text-blue-300">work opportunities</span> that  provides a great learning experience, positive company culture, and healthy work-life balance. I also welcome <span className="font-bold text-blue-300">web application commissions</span> and excited to collaborate on any innovative projects. Feel free to reach out!
                         </p> 
                         
                         <div className="flex justify-center w-full py-4">
