@@ -48,7 +48,18 @@ module.exports = {
 
     work: [
       {
-        title: 'Software Programming Instructor',
+        title: 'Full Stack Developer (Part-time)',
+        company: 'Freelance',
+        range: 'JUL 2024 - PRESENT',
+        description: [
+          "Delivered a comprehensive presentation of my undergraduate thesis on a trauma software solution to the board of the Jose R. Reyes Memorial Medical Center (JRRMC), facilitating  discussions on next steps for final approval.",
+          "Initiated  early stages of preparation for  software  pilot testing,  laying the groundwork for  further  system development."
+        ], 
+        skills: ['Firebase', 'Express', 'React', 'Node'],
+        url: 'https://jrrmmc.gov.ph/'
+      },
+      {
+        title: 'Software Programming Instructor (Part-time)',
         company: 'MyCode',
         range: 'JUL 2022 - PRESENT',
         description: [
