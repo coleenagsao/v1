@@ -68,8 +68,8 @@ export default function Nav(){
                 ))}
                 <FadeDown>
                 <div className="relative rounded px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-blue-900 hover:ring-blue-400">
-                  <a href="/AgsaoCT_resume.pdf" 
-                        download="AgsaoCT_resume.pdf" className="font-semibold text-blue-200 hover:text-blue-300">
+                  <a href="/UPLB_BSCOMPSI_Agsao.pdf" 
+                        download="UPLB_BSCOMPSI_Agsao" className="font-semibold text-blue-200 hover:text-blue-300">
                     <span aria-hidden="true" className="absolute inset-0" />
                     Resume
                   </a>
@@ -140,8 +140,8 @@ export default function Nav(){
                     </div>
                     <div className="flex justify-center">
                       <button className="relative rounded text-center px-3 py-1 text-sm leading-6 text-gray-200 ring-1 ring-blue-900 hover:ring-blue-400">
-                        <a href="/AgsaoCT_resume.pdf" 
-                              download="AgsaoCT_resume.pdf" className="font-semibold text-blue-200 hover:text-blue-300">
+                        <a href="/UPLB_BSCOMPSI_Agsao.pdf" 
+                              download="UPLB_BSCOMPSI_Agsao.pdf" className="font-semibold text-blue-200 hover:text-blue-300">
                           <span aria-hidden="true" className="absolute inset-0" />
                           Resume
                         </a>
