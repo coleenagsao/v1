@@ -23,7 +23,7 @@ export default function About(){
                     <div className="flex-2 max-w-2xl md:max-w-3xl lg:max-w-4xl mr-6 text-md md:text-lg pt-6 md:pt-1">
                       <FadeUp>
                         <p className="lg:mt-6 leading-8 text-gray-400">
-                          I’m currently working freelance as a full-stack web developer with {' '}
+                          I’m currently in contact with {' '}
                           <Link href="https://jrrmmc.gov.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">JRRMMC </Link> {' '} to transition my undergraduate thesis to an integrated system within the trauma health sector. I earned my BS Computer Science degree from the {' '}
                           <Link href="https://uplb.edu.ph/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">University of the Philippines Los Banos</Link> last August. While in the university, I have worked with a {' '}
                           <Link href="https://whitewidget.com/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">software design and engineering agency</Link>, a {' '}
