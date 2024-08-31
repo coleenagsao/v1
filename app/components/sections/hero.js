@@ -31,7 +31,8 @@ export default function Hero(){
                   {/* Name */}
                   <FadeUp>
                     <h1 className="text-5xl font-bold tracking-tight text-gray-200 md:text-6xl lg:text-7xl">
-                      I<span aria-hidden="true">&apos;</span>m <span className="text-transparent bg-clip-text bg-gradient-to-b from-blue-200 to-blue-400">Coleen Agsao</span>.
+                      {/* I<span aria-hidden="true">&apos;</span>m <span className="text-transparent bg-clip-text bg-gradient-to-b from-blue-200 to-blue-400">Coleen Agsao</span>. */}
+                      I<span aria-hidden="true">&apos;</span>m <span className=" text-blue-300">Coleen Agsao</span>.
                     </h1>
                   </FadeUp>
                   

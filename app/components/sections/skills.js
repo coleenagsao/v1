@@ -15,7 +15,7 @@ export default function Skills(){
                 {/* Header */}
                 <FadeUp>
                   <h1 className="text-xl font-bold tracking-tight text-gray-200 lg:text-2xl font-mono">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-400">Skills.</span>
+                    <span className="text-blue-100">Skills.</span>
                   </h1>
                 </FadeUp>
                 

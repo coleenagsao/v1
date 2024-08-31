@@ -29,7 +29,7 @@ export default function Projects(){
                 {/* Section */}
                 <FadeUp>
                 <h1 className="text-xl font-bold tracking-tight text-gray-200 lg:text-2xl font-mono">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-400">Projects.</span>
+                  <span className="text-blue-200">Projects.</span>
                 </h1>
                 </FadeUp>
                 {/* List of Featured Projects */}
@@ -110,7 +110,7 @@ export default function Projects(){
 
               <div className="md:px-4">
                 <FadeUp>
-                    <h3 className="text-xl font-bold tracking-tight text-gray-200 lg:text-xl md:py-4 text-transparent bg-clip-text bg-gradient-to-b from-gray-200 to-gray-400 font-mono">
+                    <h3 className="text-xl font-bold tracking-tight lg:text-xl md:py-4 text-blue-100 font-mono">
                         Other Projects.
                     </h3>
                 </FadeUp>
