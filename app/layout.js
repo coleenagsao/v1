@@ -18,8 +18,7 @@ export default function RootLayout({ children }) {
         <div className="bg-slate-950">
           <Nav />
           <Script
-            src="snow.js"
-            strategy="lazyonLoad"
+            src="/snow.js"
             defer
           />
           {children}
