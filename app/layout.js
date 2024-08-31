@@ -1,6 +1,7 @@
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { Nav, Footer } from './components';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,11 @@ export default function RootLayout({ children }) {
       <body className={inter.className} >
         <div className="bg-slate-950">
           <Nav />
+          <Script
+            src="snow.js"
+            strategy="lazyonLoad"
+            defer
+          />
           {children}
           <Footer/>
         </div>
